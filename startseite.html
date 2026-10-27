@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBox</title>
+    <meta name="description" content="Bauteile moderner Webseiten zum Nachschlagen – gebaut mit genau diesen Bauteilen.">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+
+<body>
+    <header>
+        <p><a href="startseite.html">StudyBox</a></p>
+        <nav>
+            <ul>
+                <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
+                <li><a href="ueber.html">Über dieses Projekt</a></li>
+                <li><a href="produkte.html">Produkte</a></li>
+                <li><a href="profil.html">Mein Profil</a></li>
+                <li><a href="studenten.html">Studentenrabatt</a></li>
+                <li><a href="warenkorb.html">Warenkorb</a></li>
+            </uL>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>StudyBox</h1>
+        <p>Ein Satz zum Zweck der StudyBox in eigenen Worten.</p>
+        <section id="eintraege">
+            <h2>Einträge</h2>
+            <article>
+                <h3>Das HTML-Grundgerüst</h3>
+                <p>Das HTML-Grundgerüst bestimmt mit <code>&lt;html lang="de"&gt;</code> die Sprache der Webseite.</p>
+                <p>Barrierefreiheit: Screenreader lesen die Sprache der Webseite vor. Die Sprache kann auch für
+                    Übersetzungsdienste genutzt werden.</p>
+                <p>Barrierefreiheit: Das <strong>Meta-Viewport-Tag</strong> sorgt dafür, dass die Seite auf Handys
+                    richtig dargestellt wird.</p>
+                <p>Quelle: <a href="Hier-URL">MDN – <Viewport-Meta-Tag></a></p>
+            </article>
+            <article>
+                <h3>Landmarks</h3>
+                <p>Landmarks teilen die Seite in Bereiche. Jedes Element erhält im
+                    Accessibility Tree eine Rolle:</p>
+                <dl>
+                    <dt><code>&lt;header&gt;</code></dt>
+                    <dd>Rolle <code>banner</code></dd>
+                    <dt><code>&lt;nav&gt;</code></dt>
+                    <dd>Rolle <code>navigation</code></dd>
+                    <dt><code>&lt;main&gt;</code></dt>
+                    <dd>Rolle <code>main</code></dd>
+                    <dt><code>&lt;footer&gt;</code></dt>
+                    <dd>Rolle <code>contentinfo</code></dd>
+                </dl>
+                <p>Barrierefreiheit: Screenreader listen die Bereiche auf und springen direkt zum Hauptinhalt. Eine
+                    Seite enthält <strong>genau ein</strong> <code>&lt;main&gt;</code>.</p>
+
+                <p>Quelle: <a href="Hier-URL">MDN – Landmark-Rollen</a></p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Toolbox · Bauteile für das Web</p>
+    </footer>
+</body>
+
+</html>
