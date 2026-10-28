@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unabhängige Beratung für digitale Starterpakete</title>
+    <title>StudyBox - Unabhängige Beratung für digitale Starterpakete</title>
     <meta name="description" content="Unabhängige Beratung zu Notebook, Tablet und Zubehör für den Studienstart.">
     <link rel="stylesheet" href="assets/css/base.css">
 </head>
 
 <body>
     <header>
-        <p><a href="startseite.html"><img src="logo.png" alt="StudyBox Logo" width="80"> StudyBox</a></p>
-        <nav>
+        <p><a href="startseite.html"><img src="studybox-logo.png" alt="StudyBox - Digitale Starterpakete für Studenten" width="80"></a></p>
+        <nav aria-label="Hauptnavigation">
             <ul>
                 <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
                 <li><a href="ueber.html">Über uns</a></li>
@@ -26,15 +26,24 @@
 
 
     <main>
-        <h1>StudyBox</h1>
-        <p>Wir erklären dir herstellerunabhängig, welche Technik du fürs Studium brauchst und stellen Starterpakete aus
+        <h1>Digitale Starterpakete für Studierende</h1>
+        <p>Wir erklären dir herstellerunabhängig, welche Technik du fürs Studium brauchst, und stellen Starterpakete aus
             Notebook, Tablet und Zubehör passend zu deinem Studiengang zusammen.</p>
+        <section id="ablauf">
+            <h2>In drei Schritten zu deinem Paket</h2>
+            <ol>
+                <li>Wähle deinen Studiengang: <a href="#studiengaenge">Richtwerte nach Studiengang</a></li>
+                <li>Verstehe die Technik: <a href="#technik">Technik verständlich erklärt</a></li>
+                <li>Stelle dein Paket zusammen: <a href="produkte.html">Produkte</a> und <a
+                        href="warenkorb.html">Warenkorb</a></li>
+            </ol>
+        </section>
         <section id="Starterpaket">
             <h2>Was ein Starterpaket enhält</h2>
             <article>
                 <h3>Notebook</h3>
                 <p>Das Notebook wird für Texte, Recherche, Auswertungen und Programme benötigt. Wichtig dabei sind der
-                    Arbeitsspeicher und der interne Speicher</p>
+                    Arbeitsspeicher und der interne Speicher.</p>
             </article>
             <article>
                 <h3>Tablet</h3>
@@ -52,26 +61,77 @@
                     <li>Externe Festplatte für Backups</li>
                 </ul>
             </article>
-            </section>
-            <section>
-                <h2>Technik verständlich erklärt</h2>
-                <p>Die folgenden Werte sind Richtwert aus der Praxis, keine festen Vorgaben. Maßgeblich sind die
-                    Systemvoraussetzungen deiner Software und die Vorgaben deiner Hochschule</p>
-                <dl>
+            <p><a href="produkte.html">Zu den Produkten</a></p>
+        </section>
+        <section id="technik">
+            <h2>Technik verständlich erklärt</h2>
+            <p>Die folgenden Werte sind Richtwerte aus der Praxis, keine festen Vorgaben. Maßgeblich sind die
+                Systemvoraussetzungen deiner Software und die Vorgaben deiner Hochschule.</p>
+            <dl>
                 <dt><strong>Arbeitsspeicher (RAM)</strong></dt>
                 <dd>Der Arbeitsspeicher hält die Daten bereit, mit denen das Gerät arbeitet. Je mehr Programme und Tabs
-                geöffnet sind, desto mehr Arbeitsspeicher wird gebraucht. Für den normalen Gebrauch werden 8GB
-                gebraucht. Fürs Programmieren, Bildbearbeitung oder große Datenmengen sind 16GB oder mehr sinnvoll.</dd>
-                <dt><strong>Interner Speicher (SSD/HDD)</strong><dt>
-                <dd>Der interne Speicher speichert Programme und Dokumente dauerhaft. Für das Studium reichen bei
+                    geöffnet sind, desto mehr Arbeitsspeicher wird gebraucht. Für den normalen Gebrauch werden 8GB
+                    gebraucht. Fürs Programmieren, Bildbearbeitung oder große Datenmengen sind 16GB oder mehr sinnvoll.
+                </dd>
+                <dt><strong>Interner Speicher (SSD/HDD)</strong>
+            </dl>
+            <dd>Der interne Speicher speichert Programme und Dokumente dauerhaft. Für das Studium reichen bei
                 normalem Gebrauch 256GB, um Dateien auf der internen Festplatte zu speichern. Für große Programme,
-                Videos oder große Projekte werden 512GB oder mehr empfohlen</dd>
-                <dt><strong>Prozessor</strong></dt>
-                <dd>Für den Alltag genügt ein aktueller Einstiegs- oder Mittelklasseprozessor. Leistungsstärkere Modelle
-                    lohnen sich bei Programmieren, Videoschnitt und Simulationen.</dd>
-                </dl>
+                Videos oder große Projekte werden 512GB oder mehr empfohlen.</dd>
+            <dt><strong>Prozessor</strong></dt>
+            <dd>Für den Alltag genügt ein aktueller Einstiegs- oder Mittelklasseprozessor. Leistungsstärkere Modelle
+                lohnen sich bei Programmieren, Videoschnitt und Simulationen.</dd>
+            </dl>
+        </section>
+        <section id="studiengaenge">
+            <h2>Das passende Paket für deinen Studiengang</h2>
+            <p>Je nach Fach brauchst du unterschiedlich viel Leistung. Die folgende Tabelle zeigt Richtwerte.</p>
+            <table>
+                <caption>Einschätzungen, keine Vorgaben. Maßgeblich ist deine Hochschule.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Studiengang</th>
+                        <th scope="col">Arbeitsspeicher</th>
+                        <th scope="col">Interner Speicher</th>
+                        <th scope="col">Tablet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Informatik</th>
+                        <td>mindestens 16&nbsp;GB</td>
+                        <td>512&nbsp;GB oder mehr</td>
+                        <td>optional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Design, Medien, Architektur</th>
+                        <td>16&nbsp;GB oder mehr</td>
+                        <td>großzügig, für Projektdateien</td>
+                        <td>sinnvoll für Skizzen</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wirtschaft, Recht, Geisteswissenschaften</th>
+                        <td>8&nbsp;GB</td>
+                        <td>256&nbsp;GB</td>
+                        <td>nützlich bei viel Lesen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="produkte.html">Passende Produkte ansehen</a></p>
         </section>
 
+        <section id="rabatt">
+            <h2>Studentenrabatt</h2>
+            <p>Informationen zu Vorteilen für Studierende findest du auf der Seite <a
+                    href="studenten.html">Studentenrabatt</a>.</p>
+        </section>
+
+        <section id="unabhaengig">
+            <h2>Warum wir unabhängig beraten</h2>
+            <p>Unsere Empfehlungen orientieren sich an deinem Studiengang und deinem Budget, nicht an einem bestimmten
+                Hersteller.</p>
+            <p><a href="faq.html">Häufige Fragen</a> · <a href="ueber.html">Über uns</a></p>
+        </section>
     </main>
     <footer>
         <hr>
@@ -87,4 +147,5 @@
         <p><small>StudyBox - Unabhängige Beratung für Studierende</small></p>
     </footer>
 </body>
+
 </html>
