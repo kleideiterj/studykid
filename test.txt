@@ -12,4 +12,20 @@ fshalfkhslkfsh#
 
 sajlafjlskj
 
+<<<<<<< HEAD
 kdsakjlfsjl
+=======
+teständerung
+
+hi hi
+
+test 2
+
+
+nwuwänsweunf
+
+test neu
+>>>>>>> 594d194ba28aa15b9b76343c46132593b848dfed
+
+
+bvgfhdfh
