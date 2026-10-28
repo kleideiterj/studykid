@@ -1,0 +1,101 @@
+
+/* Farben */
+:root {
+    --color-primary: #2F4156;
+    --color-secondary: #567C8D;
+    --color-blue-light: #C8D9E6;
+    --color-background: #F5EFEB;
+    --color-white: #FFFFFF;
+    --spacing: 1rem;
+}
+
+/* Grundeinstellungen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gesamte Website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-blue-light);
+}
+
+/* Hauptbereich */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Große Überschrift in der Mitte */
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--color-primary);
+    margin: 60px 0 30px;
+}
+
+/* Unterüberschriften */
+h2 {
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+}
+
+/* Text */
+p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Anpassung für Handys */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 30px;
+    }
+
+    main {
+        padding: var(--spacing);
+    }
+}
