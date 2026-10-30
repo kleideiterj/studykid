@@ -1,0 +1,37 @@
+:root {
+    --holzkohle: #2F4156;
+    --columbia-blue: #C8D9E6;
+    --tuerkisblau: #567C8D;
+    --isabelline: #F5EFEB;
+    --weiss: #FFFFFF;
+}
+
+body {
+    background-color: var(--isabelline);
+    color: var(--holzkohle);
+}
+
+h1 {
+    color: var(--tuerkisblau);
+}
+
+nav {
+    background-color: var(--holzkohle);
+    padding: 15px;
+}
+
+nav a {
+    color: var(--weiss);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: var(--columbia-blue);
+}
+
+p {
+    background-color: var(--columbia-blue);
+    padding: 10px;
+    border-radius: 5px;
+}
