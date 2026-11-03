@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: clamp(40px, 7vh, 80px) 16px 0;
+}
+
+main > h1 {
+    width: min(440px, 100%);
+    min-height: 0;
+    margin: 0 0 24px;
+    padding: 0;
+    background: none;
+    color: var(--color-primary);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: none;
+}
+
+main > hr {
+    width: min(440px, 100%);
+    margin: 0 0 24px;
+    border: 0;
+    border-top: 1px solid var(--color-blue-light);
+}
+
+main > form {
+    width: min(440px, 100%);
+    padding: clamp(24px, 5vw, 36px);
+    border: 1px solid var(--color-blue-light);
+    border-radius: 16px;
+    background-color: var(--color-white);
+    box-shadow: 0 12px 32px rgba(47, 65, 86, 0.1);
+}
+
+main > form br {
+    display: none;
+}
+
+main > form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+main > form input {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    margin: 0 0 22px;
+    padding: 10px 12px;
+    border: 1px solid var(--color-blue-light);
+    border-radius: 8px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font: inherit;
+}
+
+main > form input:focus {
+    border-color: var(--color-secondary);
+    outline: 3px solid rgba(86, 124, 141, 0.2);
+}
+
+main > form button {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+main > form button:hover {
+    transform: translateY(-1px);
+    background-color: var(--color-secondary);
+}
+
+main > form button:focus-visible,
+main > a:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 3px;
+}
+
+main > p {
+    margin: 20px 0 4px;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+main > a {
+    margin-bottom: 32px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    text-align: center;
+    text-underline-offset: 4px;
+}
+
+main > footer {
+    align-self: stretch;
+    width: 100vw;
+    margin: auto 0 0 calc(50% - 50vw);
+}
+
+@media (max-width: 760px) {
+    main {
+        padding-top: 40px;
+    }
+
+    main > footer {
+        padding: 28px 20px;
+    }
+}
