@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Warenkorb</title>
     <link rel="stylesheet" href="assets/css/warenkorb.css">
 </head>
 <body>
- <header>
-        <p><a href="startseite.html"><img src="./assets/img/studybox-hut-logo.png" alt="StudyBox - Digitale Starterpakete für Studenten" width="80"></a></p>
-        <nav aria-label="Hauptnavigation">
-            <ul>
-                <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
-                <li><a href="ueber.html">Über uns</a></li>
-                <li><a href="produkte.html">Produkte</a></li>
-                <li><a href="studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="profilAnmelden.html"> <img src="./assets/img/Profil.png" alt="Mein Profil" width="50"title="Mein Profil"></a></li>
-                <li><a href="Warenkorb.html"><img src="./assets/img/warenkorb.png" alt="Warenkorb" width="50" title="Warenkorb"></a></li>
-            </ul>
-        </nav>
-    </header>
 
+<header>
+    <p>
+        <a href="startseite.html">
+            <img src="./assets/img/studybox-hut-logo.png" alt="StudyBox - Digitale Starterpakete für Studenten" width="80">
+        </a>
+    </p>
+
+    <nav aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
+            <li><a href="ueber.html">Über uns</a></li>
+            <li><a href="produkte.html">Produkte</a></li>
+            <li><a href="studentenrabatt.html">Studentenrabatt</a></li>
+            <li>
+                <a href="profilAnmelden.html">
+                    <img src="./assets/img/Profil.png" alt="Mein Profil" width="50" title="Mein Profil">
+                </a>
+            </li>
+            <li>
+                <a href="Warenkorb.html">
+                    <img src="./assets/img/warenkorb.png" alt="Warenkorb" width="50" title="Warenkorb">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
 
     
      <main>
@@ -57,54 +72,71 @@
             <p>Farbe: Schwarz</p>
             <p> Größe: Einheitsgroeße </p>
 
-            <label for="anzahl2">Anzahl:</label>
+        <label for="anzahl2">Anzahl:</label>
 
-            <select id="anzahl2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-            </select>
+        <select id="anzahl2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+        </select>
 
             <button>Entfernen</button>
         </div>
         <hr>
         <p>Zwischensumme: 1.029,98 €</p>
+
         <p>Lieferung: 0,00 €</p>
+
         <h3>Gesamtpreis: 1.029,98 €</h3>
-        <br>
-        <button><a href="kasse.html">Zur Kasse</a></button>
-        <br>
-        <p>Wir akzeptieren:</p>
 
-        <div class="zahlung" >
+    </div>
 
-            <img src="./assets/img/visa.png" alt="Visa"height="35" >
-            <img src="./assets/img/mastercard.png" alt="Mastercard"  height="35">
-            <img src="./assets/img/paypal.png" alt="PayPal" height="35">
-            <img src="./assets/img/applepay.png" alt="Apple Pay" height="35" >
-            <img src="./assets/img/klarna.png" alt="Klarna" height="35" >
+    <br>
 
-        </div>
+    <a href="kasse.html" class="kasse-btn">Zur Kasse</a>
 
+    <br><br>
 
-        <footer>
-            <hr>
-            <nav aria-label="Footer">
-                <ul>
-                    <li><a href="ueber.html">Über uns</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="datenschutz.html">Datenschutz</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                </ul>
-            </nav>
-            <p><small>StudyBox - Unabhängige Beratung für Studierende</small></p>
-        </footer>
-    </main>
+    <p>Wir akzeptieren:</p>
+
+    <div class="zahlung">
+
+        <img src="./assets/img/visa.png" alt="Visa" height="35">
+
+        <img src="./assets/img/mastercard.png" alt="Mastercard" height="35">
+
+        <img src="./assets/img/paypal.png" alt="PayPal" height="35">
+
+        <img src="./assets/img/applepay.png" alt="Apple Pay" height="35">
+
+        <img src="./assets/img/klarna.png" alt="Klarna" height="35">
+
+    </div>
+
+</main>
+
+<footer>
+
+    <nav>
+        <ul>
+            <li><a href="ueber.html">Über uns</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="agb.html">AGB</a></li>
+        </ul>
+    </nav>
+
+    <p>
+        <small>StudyBox - Unabhängige Beratung für Studierende</small>
+    </p>
+
+</footer>
+
 </body>
 </html>
