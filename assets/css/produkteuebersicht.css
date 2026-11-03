@@ -68,11 +68,7 @@ header nav a[aria-current="page"] {
     color: var(--color-primary);
 }
 
-header nav a:focus-visible,
-.hero-cta:focus-visible {
-    outline: 3px solid var(--color-white);
-    outline-offset: 3px;
-}
+
 
 header nav a img {
     display: block;

@@ -54,7 +54,7 @@ main {
     position:relative;
 }
 
-  .warenkorb-item {
+.warenkorb-item {
     display: flex;
     flex-direction: column;
     gap: 50px;
