@@ -1,0 +1,220 @@
+:root {
+    --holzkohle: #2F4156;
+    --columbia-blue: #C8D9E6;
+    --tuerkisblau: #567C8D;
+    --isabelline: #F5EFEB;
+    --weiss: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--isabelline);
+    color: var(--holzkohle);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 12px clamp(20px, 6vw, 80px);
+    background-color: var(--holzkohle);
+    box-shadow: 0 2px 12px rgba(47, 65, 86, 0.1);
+}
+
+header > p {
+    margin: 0;
+    line-height: 0;
+}
+
+header > p img {
+    width: 72px;
+    height: auto;
+}
+
+header nav ul,
+footer nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul {
+    justify-content: flex-end;
+}
+
+header nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: var(--weiss);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus-visible,
+header nav a[aria-current="page"] {
+    background-color: var(--columbia-blue);
+    color: var(--holzkohle);
+}
+
+header nav a:focus-visible,
+footer nav a:focus-visible,
+main button:focus-visible {
+    outline: 3px solid var(--tuerkisblau);
+    outline-offset: 3px;
+}
+
+header nav a img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+    padding: 40px clamp(24px, 8vw, 120px);
+    text-align: left;
+}
+
+main h1 {
+    margin: 0 0 28px;
+    color: var(--holzkohle);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+}
+
+main h2 {
+    margin: 32px 0 16px;
+    color: var(--tuerkisblau);
+}
+
+main hr {
+    margin: 28px 0;
+    border: 0;
+    border-top: 1px solid var(--columbia-blue);
+}
+
+main label {
+    color: var(--holzkohle);
+    font-weight: 700;
+}
+
+main input[type="file"] {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0 24px;
+    padding: 12px;
+    border: 1px solid var(--columbia-blue);
+    border-radius: 8px;
+    background-color: var(--weiss);
+    color: var(--holzkohle);
+    font: inherit;
+}
+
+main input[type="checkbox"] {
+    accent-color: var(--tuerkisblau);
+}
+
+main button {
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--holzkohle);
+    color: var(--weiss);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+main button:hover {
+    transform: translateY(-1px);
+    background-color: var(--tuerkisblau);
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+footer {
+    margin-top: 56px;
+    padding: 36px 20px;
+    background-color: var(--holzkohle);
+    color: var(--weiss);
+    text-align: center;
+}
+
+footer hr {
+    display: none;
+}
+
+footer nav ul {
+    justify-content: center;
+    gap: 8px 24px;
+}
+
+footer nav a {
+    color: var(--weiss);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer nav a:hover,
+footer nav a:focus-visible {
+    color: var(--columbia-blue);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+footer p {
+    margin: 24px 0 0;
+    color: var(--columbia-blue);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 2px;
+    }
+
+    header nav a {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 32px 20px;
+    }
+
+    footer {
+        padding: 28px 20px;
+    }
+}
