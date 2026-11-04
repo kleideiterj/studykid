@@ -160,80 +160,63 @@ footer p {
 }
 
 .hero {
-    position: relative;
-    isolation: isolate;
     display: flex;
-    min-height: clamp(420px, 48vw, 580px);
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    overflow: hidden;
-    margin-bottom: 72px;
-    padding: clamp(48px, 7vw, 88px);
-    border: 1px solid rgba(47, 65, 86, 0.08);
-    border-radius: 28px;
-    background-color: var(--color-background);
-    background-image:
-        linear-gradient(90deg, var(--color-background) 0%, rgba(245, 239, 235, 0.98) 40%, rgba(245, 239, 235, 0.72) 58%, rgba(245, 239, 235, 0.08) 100%),
-        url("../img/Laptop_silber.jpg"),
-        linear-gradient(135deg, var(--color-background), var(--color-blue-light));
-    background-position: center, right center, center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%, auto 100%, 100% 100%;
-    box-shadow: 0 24px 60px rgba(47, 65, 86, 0.1);
+    margin-bottom: 56px;
+    padding: clamp(40px, 7vw, 72px) 0;
+    border-bottom: 1px solid var(--color-blue-light);
     color: var(--color-primary);
     text-align: left;
 }
 
 .hero-logo {
     display: block;
-    width: min(240px, 100%);
-    height: 64px;
-    margin: 0 0 20px;
+    width: min(190px, 100%);
+    height: 52px;
+    margin: 0 0 24px;
     object-fit: cover;
     object-position: center;
 }
 
 .hero h1 {
-    max-width: 720px;
-    margin: 0 0 20px;
+    max-width: 760px;
+    margin: 0 0 16px;
     color: var(--color-primary);
-    font-size: clamp(3rem, 6.5vw, 5.5rem);
+    font-size: clamp(2.6rem, 5.5vw, 4.5rem);
     font-weight: 700;
-    letter-spacing: -0.055em;
-    line-height: 0.98;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
 }
 
 .hero > p {
     max-width: 590px;
     margin: 0;
-    color: var(--color-primary);
-    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
-    line-height: 1.7;
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    line-height: 1.65;
 }
 
 .hero .hero-cta {
     display: inline-flex;
-    min-height: 52px;
+    min-height: 46px;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    padding: 12px 22px;
-    border: 2px solid var(--color-primary);
-    border-radius: 999px;
+    margin-top: 24px;
+    padding: 10px 18px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
     background-color: var(--color-primary);
     font-weight: 700;
     text-decoration: none;
     color: var(--color-white);
-    box-shadow: 0 8px 20px rgba(47, 65, 86, 0.18);
-    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 .hero .hero-cta:hover,
 .hero .hero-cta:focus-visible {
-    transform: translateY(-2px);
     background-color: var(--color-secondary);
-    box-shadow: 0 12px 24px rgba(47, 65, 86, 0.22);
 }
 
 .hero .hero-cta:focus-visible {
@@ -369,29 +352,22 @@ footer p {
 
 @media (max-width: 760px) {
     .hero {
-        min-height: 0;
         margin-bottom: 40px;
-        padding: 40px 24px;
-        border-radius: 20px;
-        background-image:
-            linear-gradient(rgba(245, 239, 235, 0.92), rgba(245, 239, 235, 0.96)),
-            url("../img/Laptop_silber.jpg");
-        background-position: center;
-        background-size: cover;
+        padding: 36px 0;
     }
 
     .hero-logo {
-        width: min(200px, 100%);
-        height: 54px;
+        width: min(170px, 100%);
+        height: 46px;
         margin-bottom: 16px;
     }
 
     .hero h1 {
-        font-size: clamp(2.7rem, 10vw, 4rem);
+        font-size: clamp(2.5rem, 9vw, 3.5rem);
     }
 
     .hero > p {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 }
 
