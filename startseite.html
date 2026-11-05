@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyBox - Unabhängige Beratung für digitale Starterpakete</title>
+    <title>StudyBox - Beratung für digitale Starterpakete</title>
     <meta name="description" content="Unabhängige Beratung zu Notebook, Tablet und Zubehör für den Studienstart.">
     <link rel="stylesheet" href="assets/css/base.css">
 </head>
@@ -15,7 +15,6 @@
         <nav aria-label="Hauptnavigation">
             <ul>
                 <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
-                <li><a href="ueber.html">Über uns</a></li>
                 <li><a href="produkte.html">Produkte</a></li>
                 <li><a href="studentenrabatt.html">Studentenrabatt</a></li>
                 <li><a href="profilAnmelden.html"> <img src="./assets/img/Profil.png" alt="Mein Profil" width="50"title="Mein Profil"></a></li>
@@ -26,19 +25,75 @@
 
 
     <main>
-        <h1>Digitale Starterpakete für Studierende</h1>
-        <p>Wir erklären dir herstellerunabhängig, welche Technik du fürs Studium brauchst, und stellen Starterpakete aus
-            Notebook, Tablet und Zubehör passend zu deinem Studiengang zusammen.</p>
+
+        <section class="hero">
+            <img class="hero-logo" src="./assets/img/studybox-logo.png" alt="StudyBox">
+
+            <h1>Digitale Starterpakete für Studierende</h1>
+
+            <p>
+                Wir erklären dir herstellerunabhängig, welche Technik du fürs Studium brauchst
+                und helfen dir dabei, das passende Notebook, Tablet und Zubehör für deinen
+                Studiengang zu finden.
+            </p>
+
+            <a href="produkte.html" class="hero-cta">
+                Produkte entdecken
+            </a>
+        </section>
+
+        <section class="start-products" aria-labelledby="start-products-title">
+            <div class="start-products__heading">
+                <p class="start-products__eyebrow">Technik für deinen Studienalltag</p>
+                <h2 id="start-products-title">Finde deine passende Ausstattung</h2>
+            </div>
+            <div class="start-products__grid">
+                <article class="start-product">
+                    <a class="start-product__link" href="produkte.html">
+                        <img src="./assets/img/Laptop_silber.jpg" alt="Silbernes Notebook" loading="lazy">
+                        <div class="start-product__content">
+                            <h3>Notebooks</h3>
+                            <p>Für Vorlesungen, Recherche, Hausarbeiten und deine Studienprogramme.</p>
+                            <span>Notebooks entdecken <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+                <article class="start-product">
+                    <a class="start-product__link" href="produkte.html">
+                        <img src="./assets/img/Tablet_blau.jpg" alt="Blaues Tablet" loading="lazy">
+                        <div class="start-product__content">
+                            <h3>Tablets</h3>
+                            <p>Zum Mitschreiben, Markieren von Skripten und Lernen unterwegs.</p>
+                            <span>Tablets entdecken <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+                <article class="start-product">
+                    <a class="start-product__link" href="produkte.html">
+                        <img src="./assets/img/Docking_station.jpg" alt="Dockingstation als praktisches Zubehör" loading="lazy">
+                        <div class="start-product__content">
+                            <h3>Zubehör</h3>
+                            <p>Ergänze dein Setup mit praktischem Zubehör für den Campus und deinen Schreibtisch.</p>
+                            <span>Zubehör entdecken <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <p class="start-products__all"><a href="produkte.html">Alle Produkte ansehen</a></p>
+        </section>
+
         <section id="ablauf">
-            <h2>In drei Schritten zu deinem Paket</h2>
+            <h2>In fünf Schritten zu deinem Paket</h2>
             <ol>
-                <li>Wähle deinen Studiengang: <a href="#studiengaenge">Richtwerte nach Studiengang</a></li>
+                <li>Was ein Starterpaket enhält: <a href="#info">Was ein Starterpaket enhält</a></li>
                 <li>Verstehe die Technik: <a href="#technik">Technik verständlich erklärt</a></li>
+                <li>Das passende Paket für deinen Studiengang: <a href="#studiengaenge">Das passende Paket für deinen Studiengang</a></li>
+                <li>Studentenrabatt: <a href="#studentenrabatt">Studentenrabatt</a></li>
                 <li>Stelle dein Paket zusammen: <a href="produkte.html">Produkte</a> und <a
                         href="warenkorb.html">Warenkorb</a></li>
             </ol>
         </section>
-        <section id="Starterpaket">
+        <section id="info">
             <h2>Was ein Starterpaket enhält</h2>
             <article>
                 <h3>Notebook</h3>
@@ -88,7 +143,6 @@
             <p>An der Dualen Hochschule Baden-Württemberg (DHBW) studierst du im Wechsel zwischen Hochschule und Praxisphasen im Unternehmen. Die Anforderungen an die Technik unterscheiden sich je nach Studienbereich. Wir haben die Studiengänge deshalb in sechs Gruppen eingeteilt.</p>
 
             <table>
-                <caption>Richtwerte nach Studiengruppe. Einschätzungen, keine Vorgaben. Maßgeblich sind deine Hochschule und dein Dualer Partner.</caption>
                 <thead>
                     <tr>
                         <th scope="col">Gruppe</th>
@@ -115,34 +169,45 @@
                     </tr>
                     <tr>
                         <th scope="row">Informatik</th>
-                        <td>Informatik (z. B. Angewandte Informatik, IT-Sicherheit, Künstliche Intelligenz, Data Science, Medieninformatik)</td>
-                        <td>mindestens 16 GB</td>
+                        <td>Angewandte Informatik, IT-Sicherheit, Künstliche Intelligenz, Data Science, Medieninformatik</td>
+                        <td>16 GB oder mehr</td>
                         <td>512 GB oder mehr</td>
                         <td>optional</td>
                     </tr>
                     <tr>
                         <th scope="row">Ingenieurwesen und Technik</th>
-                        <td>Maschinenbau, Elektrotechnik, Mechatronik, Bauingenieurwesen, Wirtschaftsingenieurwesen (z. B.)</td>
+                        <td>Maschinenbau, Elektrotechnik, Mechatronik, Bauingenieurwesen, Wirtschaftsingenieurwesen</td>
                         <td>16 GB oder mehr</td>
                         <td>512 GB oder mehr</td>
                         <td>sinnvoll für Skizzen und Mitschriften</td>
                     </tr>
                     <tr>
                         <th scope="row">Medien und Gestaltung</th>
-                        <td>Medien- und Kommunikationswirtschaft sowie gestalterische Studiengänge, falls an deinem Standort angeboten</td>
+                        <td>Medien- und Kommunikationswirtschaft sowie gestalterische Studiengänge</td>
                         <td>16 GB oder mehr bei Bild- und Videobearbeitung</td>
                         <td>512 GB oder mehr</td>
                         <td>sinnvoll für Skizzen</td>
                     </tr>
                     <tr>
                         <th scope="row">Soziales und Gesundheit</th>
-                        <td>Soziale Arbeit, Gesundheits- und Pflegestudiengänge (z. B.), je nach Standort</td>
+                        <td>Soziale Arbeit, Gesundheits- und Pflegestudiengänge</td>
                         <td>8 GB</td>
                         <td>256 GB</td>
                         <td>nützlich für Mitschriften und Lernunterlagen</td>
                     </tr>
                 </tbody>
             </table>
+                <p><small>Richtwerte nach Studiengruppe. Einschätzungen, keine Vorgaben. Maßgeblich sind deine Hochschule und dein Dualer Partner.</small></p>
+
+            </section>
+
+           
+           
+            <section id="studentenrabatt">
+            <h2>Studentenrabatt</h2>
+            <p>Informationen zu Vorteilen für Studierende findest du auf der Seite <a
+                    href="studentenrabatt.html">Studentenrabatt</a>.</p>
+        
 
             <h3>Gut zu wissen für dein duales Studium</h3>
             <ul>
@@ -154,13 +219,7 @@
             <p><a href="produkte.html">Passende Produkte ansehen</a></p>
         </section>
 
-        <section id="rabatt">
-            <h2>Studentenrabatt</h2>
-            <p>Informationen zu Vorteilen für Studierende findest du auf der Seite <a
-                    href="studenten.html">Studentenrabatt</a>.</p>
-        </section>
 
-        
     </main>
     <footer>
         <hr>
@@ -170,7 +229,6 @@
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="impressum.html">Impressum</a></li>
                 <li><a href="datenschutz.html">Datenschutz</a></li>
-                <li><a href="agb.html">AGB</a></li>
             </ul>
         </nav>
         <p><small>StudyBox - Unabhängige Beratung für Studierende</small></p>
