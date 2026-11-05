@@ -36,7 +36,7 @@ main > hr {
 }
 
 main > form {
-    width: min(440px, 100%);
+    width: min(520px, 100%);
     padding: clamp(24px, 5vw, 36px);
     border: 1px solid var(--color-blue-light);
     border-radius: 16px;
@@ -55,7 +55,8 @@ main > form label {
     font-weight: 700;
 }
 
-main > form input {
+main > form input:not([type="checkbox"]):not([type="radio"]),
+main > form select {
     display: block;
     width: 100%;
     min-height: 48px;
@@ -68,9 +69,29 @@ main > form input {
     font: inherit;
 }
 
-main > form input:focus {
+main > form input::placeholder {
+    color: #647487;
+    opacity: 1;
+}
+
+main > form input:focus-visible,
+main > form select:focus-visible {
     border-color: var(--color-secondary);
     outline: 3px solid rgba(86, 124, 141, 0.2);
+}
+
+main > form > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+main > form > div:first-child input {
+    min-width: 0;
+}
+
+main > p input[type="checkbox"] {
+    accent-color: var(--color-secondary);
 }
 
 main > form button {
@@ -104,12 +125,19 @@ main > p {
     text-align: center;
 }
 
+main > p a,
 main > a {
     margin-bottom: 32px;
     color: var(--color-secondary);
     font-weight: 700;
     text-align: center;
     text-underline-offset: 4px;
+}
+
+main > p a:focus-visible,
+main > a:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 3px;
 }
 
 main > footer {
@@ -125,5 +153,20 @@ main > footer {
 
     main > footer {
         padding: 28px 20px;
+    }
+
+    main > form > div:first-child {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    main > form button {
+        transition: none;
+    }
+
+    main > form button:hover {
+        transform: none;
     }
 }
