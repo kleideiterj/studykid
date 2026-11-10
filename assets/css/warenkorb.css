@@ -15,13 +15,7 @@
     box-sizing: border-box;
 }
 
-/* Gesamte Website */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: var(--color-background);
-    color: var(--color-primary);
-}
+
 
 /* Navigation */
 nav {
