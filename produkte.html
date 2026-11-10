@@ -1,150 +1,115 @@
-<html>
-    <head>
-        <title>
-            Produkte
-        </title>
+<!DOCTYPE html>
+<html lang="de">
 
-        <link rel="stylesheet" href="produkteuebersicht.css">                   // Einbindung CSS-Datei
-        <link rel="stylesheet" href="assets/css/produkteuebersicht.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte</title>
 
-    <nav>
-        <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
-                <li><a href="produkte.html">Produkte</a></li>
-                <li><a href="studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="profilAnmelden.html"> <img src="./assets/img/Profil.png" alt="Mein Profil" width="50"
-                            title="Mein Profil"></a></li>
-                <li><a href="Warenkorb.html"><img src="./assets/img/warenkorb.png" alt="Warenkorb" width="50"
-                            title="Warenkorb"></a></li>
-    </nav>
-    </head>
+    <link rel="stylesheet" href="./assets/css/produkteuebersicht.css">
+</head>
 
-    <body>
+<body>
 
-        <header>
+   
 
-            <p>
-                <a href="startseite.html">
-                    <img src="./assets/img/studybox-hut-logo.png"                       //Unternehmenslogo mit Link zur Startseite
-                         alt="StudyBox - Digitale Starterpakete für Studenten"
-                         width="80">
-                </a>
-            </p>
+<header>
+    <p>
+        <a href="startseite.html">
+            <img src="./assets/img/studybox-hut-logo.png"
+                 alt="StudyBox Logo"
+                 width="80">
+        </a>
+    </p>
 
-            <nav aria-label="Hauptnavigation">                                         //Hauptnavigation der Webseite
-                <ul>
+    <nav aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="startseite.html">Übersicht</a></li>
+            <li><a href="ueber.html">Über uns</a></li>
 
-                    <li>
-                        <a href="startseite.html" aria-current="page">
-                            Übersicht
-                        </a>
-                    </li>
+            <li class="dropdown">
+                <a href="produkte.html">Produkte</a>
 
-                    <li>
-                        <a href="ueber.html">
-                            Über uns
-                        </a>
-                    </li>
-
-                    <li class="dropdown">
-
-                        <a href="produkte.html">
-                            Produkte
-                        </a>
-
-                        <ul class="untermenue">
-                            <li>
-                                <a href="zubehoer.html">
-                                    Zubehör
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="hardware.html">
-                                    Hardware
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="bundles.html">
-                                    Bundles
-                                </a>
-                            </li>
-                        </ul>
-
-                    </li>
-
-                    <li>
-                        <a href="studentenrabatt.html">
-                            Studentenrabatt
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="profilAnmelden.html">
-                            <img src="./assets/img/Profil.png"
-                                 alt="Mein Profil"
-                                 width="50"
-                                 title="Mein Profil">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="Warenkorb.html">
-                            <img src="./assets/img/warenkorb.png"
-                                 alt="Warenkorb"
-                                 width="50"
-                                 title="Warenkorb">
-                        </a>
-                    </li>
-
+                <ul class="untermenue">
+                    <li><a href="zubehoer.html">Zubehör</a></li>
+                    <li><a href="hardware.html">Hardware</a></li>
+                    <li><a href="bundles.html">Bundles</a></li>
                 </ul>
-            </nav>
+            </li>
 
-        </header>
+            <li><a href="studentenrabatt.html">Studentenrabatt</a></li>
 
-        <h1>Willkommen</h1>                                                            //Hauptüberschrift der Seite
+            <li>
+                <a href="profilAnmelden.html">
+                    <img src="./assets/img/Profil.png"
+                         alt="Profil"
+                         width="50">
+                </a>
+            </li>
 
-        <p>Hier sind unsere Produkte</p>
+            <li>
+                <a href="Warenkorb.html">
+                    <img src="./assets/img/warenkorb.png"
+                         alt="Warenkorb"
+                         width="50">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-        <div class="produktbereich">
+<main>
 
-            <div class="produkt">
+    <h1>Willkommen</h1>
 
-                <img src="produkt1.jpg"                                                //Produktbild 1
-                     alt="Produkt 1"
-                     class="produktbild">
+    <p>Hier sind unsere Produkte</p>
 
-                <h2>Produkt 1</h2>
+    <div class="produktbereich">
 
-                <p>Beschreibung von Produkt 1</p>
+        <div class="produkt">
+            <img src="./assets/img/Bildschirm.jpg"
+                 alt="Monitor"
+                 class="produktbild">
 
-                <p class="preis">
-                    Preis: 19,99 €
-                </p>
+            <h2>StudyBox Monitor</h2>
 
-                <button>In den Warenkorb</button>
+            <p>Hochauflösender Monitor für Studium und Homeoffice.</p>
 
-            </div>
+            <p class="preis">Preis: 149,99 €</p>
 
-            <div class="produkt">
-
-                <img src="produkt2.jpg"                                                 //Produktbild 2
-                     alt="Produkt 2"
-                     class="produktbild">
-
-                <h2>Produkt 2</h2>
-
-                <p>Beschreibung von Produkt 2</p>
-
-                <p class="preis">
-                    Preis: 29,99 €
-                </p>
-
-                <button>In den Warenkorb</button>                                      //Warenkorb-Button
-
-            </div>
-
+            <button>In den Warenkorb</button>
         </div>
 
-    </body>
-</html>
+        <div class="produkt">
+            <img src="./assets/img/Tastatur.jpg"
+                 alt="Tastatur"
+                 class="produktbild">
+
+            <h2>StudyBox Tastatur</h2>
+
+            <p>Kabellose Tastatur für produktives Arbeiten.</p>
+
+            <p class="preis">Preis: 29,99 €</p>
+
+            <button>In den Warenkorb</button>
+        </div>
+
+        <div class="produkt">
+            <img src="./assets/img/Maus.jpg"
+                 alt="Maus"
+                 class="produktbild">
+
+            <h2>StudyBox Maus</h2>
+
+            <p>Ergonomische Funkmaus für den Studienalltag.</p>
+
+            <p class="preis">Preis: 24,99 €</p>
+
+            <button>In den Warenkorb</button>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
