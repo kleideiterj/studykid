@@ -1,0 +1,122 @@
+:root {
+    --color-primary: #2F4156;
+    --color-secondary: #567C8D;
+    --color-blue-light: #C8D9E6;
+    --color-background: #F5EFEB;
+    --color-white: #FFFFFF;
+    --spacing: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 12px clamp(20px, 6vw, 80px);
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 12px rgba(47, 65, 86, 0.1);
+}
+
+header > p {
+    margin: 0;
+    line-height: 0;
+}
+
+header > p img {
+    width: 72px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: var(--color-white);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus-visible {
+    background-color: var(--color-blue-light);
+    color: var(--color-primary);
+}
+
+header nav a:focus-visible,
+.hero-cta:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 3px;
+}
+
+header nav a img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+footer {
+    margin-top: 80px;
+    padding: 36px max(20px, calc((100% - 1120px) / 2));
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+}
+
+footer hr {
+    display: none;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer nav a:hover,
+footer nav a:focus-visible {
+    color: var(--color-blue-light);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+footer p {
+    margin: 24px 0 0;
+    color: var(--color-blue-light);
+    font-size: 0.9rem;
+}
