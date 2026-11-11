@@ -2,138 +2,174 @@
 <html lang="de">
 
 <head>
+<<<<<<< HEAD
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warenkorb</title>
+    <link rel="stylesheet" href="assets/css/warenkorb.css">
+=======
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Warenkorb</title>
+  <link rel="stylesheet" href="assets/css/navigation.css">
   <link rel="stylesheet" href="assets/css/warenkorb.css">
+>>>>>>> d6c5f4668940b3c560a59f14f712e691dbdef5ba
 </head>
 
 <body>
 
-  <header>
-    <p>
-      <a href="startseite.html">
+    <header>
+        <p>
+            <a href="startseite.html"></a>
+        </p>
 
-      </a>
-    </p>
+        <nav aria-label="Hauptnavigation">
+            <img src="./assets/img/studybox-hut-logo.png"
+                alt="StudyBox - Digitale Starterpakete für Studenten" width="80">
 
-    <nav aria-label="Hauptnavigation"><img src="./assets/img/studybox-hut-logo.png"
-        alt="StudyBox - Digitale Starterpakete für Studenten" width="80">
-      <ul>
-        <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
+            <ul>
+                <li><a href="startseite.html" aria-current="page">Übersicht</a></li>
                 <li><a href="produkte.html">Produkte</a></li>
                 <li><a href="studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="profilAnmelden.html"> <img src="./assets/img/Profil.png" alt="Mein Profil" width="50"
-                            title="Mein Profil"></a></li>
-                <li><a href="Warenkorb.html"><img src="./assets/img/warenkorb.png" alt="Warenkorb" width="50"
-                            title="Warenkorb"></a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
+                <li>
+                    <a href="profilAnmelden.html">
+                        <img src="./assets/img/Profil.png" alt="Mein Profil" width="50" title="Mein Profil">
+                    </a>
+                </li>
 
+                <li>
+                    <a href="Warenkorb.html">
+                        <img src="./assets/img/warenkorb.png" alt="Warenkorb" width="50" title="Warenkorb">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-      <h1> Warenkorb </h1>
-      <div class="warenkorb-item">
-        <div class="item-details">
-          <div class="produkt-inhalt">
 
-            <img src="./assets/img/Kit Wirtschaft & Management.jpg" alt="Notebook" width="150">
-            <div class="produkt-info">
+        <h1>Warenkorb</h1>
 
-              <h2>Wirtschaft und Management-box</h2>
-              <p>-----------------------------------------------</p>
-              <p class="preis">Preis:xxxxxxxxxx</p>
+        <div class="warenkorb-item">
 
+            <!-- Wirtschaft & Management Box -->
+            <div class="item-details">
+                <div class="produkt-inhalt">
 
-              <div class="anzahl">
-                <label for="anzahl1">Anzahl:</label>
+                    <img src="./assets/img/Kit Wirtschaft & Management.jpg"
+                        alt="Wirtschaft und Management Box" width="150">
 
-                <select id="anzahl1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                    <div class="produkt-info">
 
-                </select>
-                <br><br><br><br>
-              </div>
+                        <h2>Wirtschaft und Management-box</h2>
+                        <p>-----------------------------------------------</p>
+                        <p class="preis">Preis: xxxxxxxxxx</p>
+
+                        <div class="anzahl">
+                            <label for="anzahl1">Anzahl:</label>
+
+                            <select id="anzahl1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+
+                            <br><br><br><br>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button>Entfernen</button>
             </div>
-          </div>
 
+            <!-- Informatik Box -->
+            <div class="item-details">
+                <div class="produkt-inhalt">
 
-          <button>Entfernen</button>
-        </div>
+                    <img src="./assets/img/Kit Informatik.jpg"
+                        alt="Informatik-box" width="150">
 
+                    <div class="produkt-info">
 
+                        <h2>Informatik-box</h2>
+                        <p>-----------------------------------------------</p>
+                        <p class="preis">Preis: xxxxxxxxxx</p>
 
-        <div class="item-details">
-          <img src="./assets/img/Kit Informatik.jpg" alt="Informatik-box" width="150">
-          <h2>Informatik-box</h2>
-          <p>-----------------------------------------------</p>
-          <p class="preis">Preis:xxxxxxxxxx</p>
+                        <div class="anzahl">
+                            <label for="anzahl2">Anzahl:</label>
 
-          <label for="anzahl2">Anzahl:</label>
-          <select id="anzahl2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+                            <select id="anzahl2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
 
-          </select>
-          <br><br><br><br>
-          <button>Entfernen</button>
-        </div>
+                            <br><br><br><br>
+                        </div>
 
-        <hr>
+                    </div>
 
-        <div class="bestellung">
-          <p>
-            Zwischensumme: 1.029,98 €
-          </p>
-          <p>
-            Lieferung: 0,00 €
-          </p>
+                </div>
 
-          <h3>Gesamtpreis: 1.029,98 €</h3>
-          <br>
-          <p>
-            <a href="kasse.html" class="kasse-btn"><button>Zur Kasse</button></a>
-          </p>
-          <hr>
-        </div>
-        <div class="zahlung">
-          Wir akzeptieren:
-          <br>
-          <br>
-          <img src="./assets/img/visa.png" alt="Visa" height="35">
-          <img src="./assets/img/mastercard.png" alt="Mastercard" height="35">
-          <img src="./assets/img/paypal.png" alt="PayPal" height="35">
-          <img src="./assets/img/applepay.png" alt="Apple Pay" height="35">
-          <img src="./assets/img/klarna.png" alt="Klarna" height="35">
+                <button>Entfernen</button>
+            </div>
+
+            <hr>
+
+            <div class="bestellung">
+                <p>Zwischensumme: 1.029,98 €</p>
+                <p>Lieferung: 0,00 €</p>
+
+                <h3>Gesamtpreis: 1.029,98 €</h3>
+
+                <br>
+
+                <p>
+                    <a href="kasse.html" class="kasse-btn">
+                        <button>Zur Kasse</button>
+                    </a>
+                </p>
+
+                <hr>
+            </div>
+
+            <div class="zahlung">
+                Wir akzeptieren:
+                <br><br>
+
+                <img src="./assets/img/visa.png" alt="Visa" height="35">
+                <img src="./assets/img/mastercard.png" alt="Mastercard" height="35">
+                <img src="./assets/img/paypal.png" alt="PayPal" height="35">
+                <img src="./assets/img/applepay.png" alt="Apple Pay" height="35">
+                <img src="./assets/img/klarna.png" alt="Klarna" height="35">
+            </div>
+
         </div>
 
     </main>
 
     <footer>
-      <nav aria-label="Footer">
-        <ul>
-          <li><a href="ueber.html">Über uns</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="agb.html">AGB</a></li>
-        </ul>
-      </nav>
+        <nav aria-label="Footer">
+            <ul>
+                <li><a href="ueber.html">Über uns</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+                <li><a href="agb.html">AGB</a></li>
+            </ul>
+        </nav>
 
-      <p>
-        <img src="./assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten"
-          width="80">
-      </p>
+        <p>
+            <img src="./assets/img/studybox-logo-weiss.png"
+                alt="StudyBox - Digitale Starterpakete für Studenten" width="80">
+        </p>
     </footer>
 
 </body>
