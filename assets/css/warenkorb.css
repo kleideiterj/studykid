@@ -15,36 +15,8 @@
     box-sizing: border-box;
 }
 
-/* Gesamte Website */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: var(--color-background);
-    color: var(--color-primary);
-}
 
-/* Navigation */
-nav {
-    background-color: var(--color-primary);
-    padding: 20px;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--color-blue-light);
-}
 
 /* Hauptbereich */
 main {
