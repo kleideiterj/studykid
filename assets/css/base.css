@@ -345,6 +345,93 @@ main > h1 + p {
     outline-offset: 4px;
 }
 
+.start-info {
+    margin: 0 0 72px;
+}
+
+.start-info > h2 {
+    margin: 0 0 24px;
+    color: var(--color-primary);
+    font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.start-info__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.start-info__card {
+    padding: 24px;
+    border: 1px solid var(--color-blue-light);
+    border-top: 4px solid var(--color-secondary);
+    border-radius: 14px;
+    background: var(--color-white);
+    box-shadow: 0 8px 22px rgba(47, 65, 86, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-info__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(47, 65, 86, 0.13);
+}
+
+.start-info__card h3 {
+    margin: 0 0 12px;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+}
+
+.start-info__card p {
+    margin: 0;
+    color: var(--color-secondary);
+    line-height: 1.7;
+}
+
+.start-info__card ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.start-info__card li {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--color-background);
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.start-info__cta {
+    margin: 24px 0 0;
+    text-align: right;
+}
+
+.start-info__cta a {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.start-info__cta a:hover,
+.start-info__cta a:focus-visible {
+    background: var(--color-secondary);
+}
+
+.start-info__cta a:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 4px;
+}
+
 /* Anpassungen für kleinere Bildschirme */
 @media (max-width: 1000px) {
     .start-steps__list {
@@ -367,6 +454,18 @@ main > h1 + p {
         min-height: 180px;
         padding: 16px;
     }
+
+    .start-info {
+        margin-bottom: 56px;
+    }
+
+    .start-info__card {
+        padding: 20px;
+    }
+
+    .start-info__cta {
+        text-align: left;
+    }
 }
 
 @media (max-width: 380px) {
@@ -380,6 +479,10 @@ main > h1 + p {
 }
 
 @media (max-width: 760px) {
+    .start-info__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .start-products__grid {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -404,12 +507,21 @@ main > h1 + p {
     }
 }
 
+@media (max-width: 560px) {
+    .start-info__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
-    .start-steps__list li {
+    .start-steps__list li,
+    .start-info__card {
         transition: none;
     }
 
-    .start-steps__list li:hover {
+    .start-steps__list li:hover,
+    .start-info__card:hover {
         transform: none;
     }
 }
