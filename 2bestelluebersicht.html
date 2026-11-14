@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bestellübersicht</title>
     <link rel="stylesheet" href="assets/css/navigation.css">
     <link rel="stylesheet" href="assets/css/base.css">
@@ -10,68 +11,111 @@
 
 <body>
 
-
-    
     <main>
-        <h1>Bestellübersicht </h1>
+        <h1>Bestellübersicht</h1>
         <a href="kasse.html"><button>Zur Kasse</button></a>
-        <h2><strong>Erwartete Zustellung</strong></h2>
-        
-        
-        
-            <h3> <strong>15.12. - 20.12.</strong></h3>
-            Standard-Lieferung: 0,00 €
-            <h2> Paket wird zugestellt von Studybox </h2>
-        
 
-        <br>
+        <h2><strong>Erwartete Zustellung</strong></h2>
+        <h3><strong>15.12. - 20.12.</strong></h3>
+        <p>Lieferung: kostenfrei</p>
+        <h2>Paket wird zugestellt von StudyBox</h2>
+
         <hr>
 
+        <h1>Bestellung</h1>
+        <h3><strong>15.12. - 20.12.</strong></h3>
 
-        <h1>Bestellung </h1>
-        <br>
+        <!-- Zwei-Spalten-Layout: links Inhalt, rechts Zusammenfassung -->
+        <div class="warenkorb-layout">
 
-
-        <h3> <strong>15.12. - 20.12.</strong></h3>
-        <div class="warenkorb-item">
-            <img src="./assets/img/L.silber1.jpg" alt="Notebook" width="150">
-
-            <h2>Notebook</h2>
-            <strong>Preis: 999,99 €</strong>
-            Farbe: Schwarz
-            <br>
-            <hr>
-        </div>
-        <div class="warenkorb-item">
-
-            <img src="./assets/img/Maus.jpg" alt="Maus" width="150">
-
+            <!-- Linke Seite -->
             <div>
+                <section class="warenkorb-produkte">
 
-                <h2>Maus</h2>
-                <strong>Preis: 29,99 €</strong>
-                <br><br>
-                <br><br>
+                    <!-- Wirtschaft & Digitales Bundle -->
+                    <div class="warenkorb-item">
+                        <div class="item-details">
+                            <div class="produkt-inhalt">
+
+                                <a href="wirtschaft-digitales-bundle.html">
+                                    <img src="./assets/img/Kit Wirtschaft &amp; Digitales.jpg"
+                                        alt="StudyBox Wirtschaft und Digitales Bundle" loading="lazy"
+                                        style="width: 180px; height: auto; object-fit: contain;">
+                                </a>
+
+                                <div class="produkt-info">
+                                    <h2>Wirtschaft &amp; Digitales Bundle</h2>
+                                    <p>Das Premium-Studienpaket für digitale Studiengänge. Mit Notebook, Monitor, Tablet und
+                                        passendem Zubehör für maximale Produktivität.</p>
+                                    <p class="preis">Preis: 1.349,99 €</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informatik Bundle -->
+                    <div class="warenkorb-item">
+                        <div class="item-details">
+                            <div class="produkt-inhalt">
+
+                                <a href="informatik-bundle.html">
+                                    <img src="./assets/img/Kit Informatik.jpg" alt="StudyBox Informatik Bundle"
+                                        loading="lazy"
+                                        style="width: 180px; height: auto; object-fit: contain;">
+                                </a>
+
+                                <div class="produkt-info">
+                                    <h2>StudyBox Informatik Bundle</h2>
+                                    <p>Leistungsstarkes Komplettpaket mit Intel Core i7, 16 GB RAM, 512 GB SSD, Tablet und
+                                        24"-Monitor für Coding, Cloud-Computing und Datenbanken</p>
+                                    <p class="preis">Preis: 1.199,99 €</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div>
+                    <h3>Lieferadresse</h3>
+                    <p>Max Mustermann</p>
+                    <p>DHBW Heidenheim, Digitaler Campus</p>
+                    <p>Marienstraße 20</p>
+                    <p>89518 Heidenheim an der Brenz</p>
+                    <p>Deutschland</p>
+                </div>
+
+                <div>
+                    <h3>Rechnungsadresse</h3>
+                    <p>Rechnungsadresse entspricht der Lieferadresse</p>
+                </div>
+
                 <hr>
 
+                <div>
+                    <h3>Gutscheine &amp; Rabatte</h3>
+                    <label>Code eingeben:</label><br>
+                    <input type="text" required>
+                    <a href="2bestelluebersicht.html"><button>Rabatt anwenden</button></a>
+                </div>
             </div>
-            <div>
-                <h3> Lieferadresse</h3>
-                <p>Max Mustermann</p>
-                <p>Musterstraße 1</p>
-                <p>12345 Musterstadt</p>
-                <p>Deutschland</p>
-            </div>
-            <br><br>
 
+            <!-- Rechte Seite -->
             <div>
-                <h3>Rechnungsadresse</h3>
-                <p>Rechnungsadresse entspricht der Lieferadresse</p>
-            </div>
-            <br>
-            <hr>
-            <div>
-                <h3>Zahlungsart</h3>
+
+                <hr>
+
+                <p>Zwischensumme: 2.549,98 €</p>
+                <p>-10 % Studentenrabatt: - 255,00 €</p>
+                <p>Lieferung: kostenfrei</p>
+                <p><strong>Gesamtpreis: 2.294,98 €</strong></p>
+
+                    <a href="bestellt.html"><button> Zur Bestätigung</button></a>
+
+                <hr>
+
                 <p>Wir akzeptieren:</p>
 
                 <div class="zahlung">
@@ -81,36 +125,19 @@
                     <img src="./assets/img/applepay.png" alt="Apple Pay" height="35">
                     <img src="./assets/img/klarna.png" alt="Klarna" height="35">
                 </div>
-            </div>
-            <br>
 
-            <div>
-                <h3> Gutscheine & Rabatte</h3>
-               <label>Code eingeben:</label><br>
-            <input type="text" required>
-                <a href="2bestelluebersicht.html"><button>Rabatt anwenden</button></a>
-                <br><br>
-            </div>
-            <div>
-                <h3>
-                    Zwischensumme: 1.029,98 €
-                </h3>
-                <h3>Standard-Lieferung: <del>4,99 €</del>     0,00 €</h3>
-                <p>kostenfreie Lieferung ab 1.500,00 €</p>
-                <h3>-10% studentenrabatt: - 102,99 €</h3>
-                <h3><strong>Gesamtsumme:  926,99 €</strong></h3>
-                <p>MwSt.</p>
-                <a href="bestellt.html"><button>Bestätigen</button></a>
-                <br>
                 <hr>
 
                 <p>Mit deiner Bestellung erklärst du dich mit unseren Datenschutzbestimmungen,<br>
                     AGB und Widerrufsbestimmungen einverstanden. Sie bestätigen hiermit außerdem,<br>
                     dass Ihr Kauf ausschließlich zum Zweck des persönlichen Gebrauchs dient.<br>
-                    Als Kunde von Zalando.de erhältst du Produktempfehlungen per Mail, <br>
+                    Als Kunde von StudyBox.de erhältst du Produktempfehlungen per Mail, <br>
                     von denen du dich jederzeit über einen Link in der Mail abmelden kannst.</p>
             </div>
+
+        </div>
     </main>
+
     <footer>
         <hr>
         <nav aria-label="Footer">
@@ -123,8 +150,6 @@
         </nav>
         <p><img src="./assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten" width="80"></p>
     </footer>
-
-
 
 </body>
 
