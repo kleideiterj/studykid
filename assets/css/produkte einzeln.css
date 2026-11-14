@@ -1,4 +1,7 @@
 
+body{
+    background:red;
+}
 :root {
     --color-primary: #2F4156;
     --color-secondary: #567C8D;
