@@ -1,7 +1,3 @@
-
-body{
-    background:red;
-}
 :root {
     --color-primary: #2F4156;
     --color-secondary: #567C8D;
@@ -29,7 +25,6 @@ h3 {
 .bundle-header {
     display: flex;
     gap: 40px;
-    align-items: center;
     background-color: var(--color-white);
     padding: 25px;
     border-radius: 20px;
@@ -38,8 +33,6 @@ h3 {
 
 .bundle-image {
     width: 450px;
-    max-width: 100%;
-    height: auto;
     border-radius: 10px;
 }
 
@@ -51,7 +44,6 @@ h3 {
     color: green;
     font-size: 2rem;
     font-weight: bold;
-    margin: 20px 0;
 }
 
 .bundle-savings {
@@ -59,6 +51,31 @@ h3 {
     padding: 12px;
     background: var(--color-blue-light);
     border-radius: 10px;
+}
+
+.colors {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.black {
+    background: black;
+}
+
+.white {
+    background: white;
+}
+
+.blue {
+    background: var(--color-secondary);
 }
 
 button {
@@ -81,16 +98,28 @@ button {
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
+.benefits {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.benefit {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
 .component {
     display: flex;
     gap: 30px;
-    padding: 30px 0;
+    padding: 25px 0;
 }
 
 .component img {
     width: 220px;
-    height: 220px;
-    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -102,43 +131,75 @@ button {
     line-height: 1.6;
 }
 
-.component-info ul {
-    padding-left: 20px;
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    width: 200px;
+    color: var(--color-primary);
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
 }
 
 hr {
     border: none;
     border-top: 1px solid #d4d4d4;
-    margin: 25px 0;
 }
 
-.bundle-back {
-    text-align: center;
-    margin-top: 30px;
+.rating {
+    color: #f5b301;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
 }
 
-.bundle-back a {
-    text-decoration: none;
-    font-weight: bold;
+.rating span {
     color: var(--color-primary);
+    font-size: 1rem;
+    margin-left: 10px;
 }
 
-@media (max-width: 900px) {
+.review-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
 
-    .bundle-header {
-        flex-direction: column;
-        text-align: center;
-    }
+.review-card {
+    min-width: 280px;
+    max-width: 320px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
 
-    .component {
-        flex-direction: column;
-        align-items: center;
-    }
+.review-card:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
 
-    .component img {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-    }
+.quote {
+    font-size: 70px;
+    line-height: 50px;
+    color: var(--color-blue-light);
+}
 
+.review-stars {
+    color: #f5b301;
+    margin-bottom: 10px;
+}
+
+.review-date {
+    color: gray;
+    font-size: 0.9rem;
 }
