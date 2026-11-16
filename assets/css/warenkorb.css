@@ -1,3 +1,4 @@
+/*Farbvariablen und allgemeine Abstände*/
 :root {
     --color-primary: #2F4156;
     --color-secondary: #567C8D;
@@ -7,21 +8,21 @@
     --spacing: 1rem;
 }
 
-/* Grundeinstellungen */
+/* Grundeinstellungen an Abständen aller Elemente*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Hauptbereich */
+/* Hauptbereich der Seite */
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: 1200px; /*maximale Breite*/
+    margin: 0 auto; /*zentriert den Inahlt*/
+    padding: 40px 20px; /*Innenabstand*/
 }
 
-/* Warenkorb-Layout */
+/* Zweispaltiges Layout: links Produkte, rechts Zusammenfassung, Warenkorb-Layout */
 .warenkorb-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -39,12 +40,20 @@ main {
     margin-bottom: 25px;
 }
 
+/*Einzelne Produktkarte*/
+
 .item-details {
     width: 100%;
     background-color: white;
     border-radius: 20px;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /*Animation für Hover-Effekt*/
+}
+/*Hebt die Karte leicht an, wenn mit Maus darüber fährt*/
+.item-details:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
 }
 
 /* Produktdarstellung */
@@ -56,13 +65,20 @@ main {
     width: 100%;
 }
 
+/*Produktbild*/
 .produkt-inhalt img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width:300px;
+    height: auto;
     object-fit: contain;
-    flex-shrink: 0;
+    transition: transform 0.2s ease; /*Hover*/
+    
 }
-
+/*Bild leicht vergrößert*/
+.produkt-inhalt img:hover {
+    transform: scale(1.03);
+}
+/*Bereich mit Produltinformationen*/
 .produkt-info {
     flex: 1;
     text-align: left;
@@ -88,6 +104,7 @@ main {
     font-size: 18px;
 }
 
+/*Dropdown-Menu für Auswahl Produktanzahl*/
 select {
     padding: 8px 12px;
     border: 1px solid var(--color-primary);
@@ -96,29 +113,17 @@ select {
     font-size: 16px;
 }
 
-/* Rechte Seite */
+/* Rechte Seite, Zusammenfassung der Bestellung */
 .warenkorb-zusammenfassung {
     background: white;
     border-radius: 20px;
     padding: 25px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 
-    position: sticky;
+    position: sticky; /*Beim Scrollen sichtbar*/
     top: 20px;
 }
 
-.preis-zeile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.gesamt {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--color-primary);
-}
 
 /* Button */
 button {
@@ -132,12 +137,19 @@ button {
     font: inherit;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease; /*Hover-Effekte*/
+    touch-action: manipulation; /*Verbesserte Bedienung auf Touch-Geräten*/
 }
 
 button:hover {
-    background-color: var(--color-secondary);
-    transform: translateY(-2px);
+    background-color: var(--color-secondary); /*Farbänderung beim Überfahren mit der Maus*/
+}
+
+/*Benutzung für Tab-Taste*/
+button:focus,
+select:focus {
+    outline: 3px solid var(--color-blue-light);
+    outline-offset: 2px;
 }
 
 /* Überschriften */
@@ -156,8 +168,6 @@ h2 {
 p {
     margin-bottom: 20px;
 }
-
-
 
 
 /* Footer */
@@ -190,8 +200,8 @@ footer {
     }
 
     .produkt-inhalt img {
-        width: 220px;
-        height: 220px;
+        max-width: 220px;
+        height: auto;
     }
 }
 
@@ -207,8 +217,7 @@ footer {
     }
 
     .produkt-inhalt img {
-        width: 180px;
-        height: 180px;
+        max-width: 180px;
+        height: auto;
     }
 }
-
