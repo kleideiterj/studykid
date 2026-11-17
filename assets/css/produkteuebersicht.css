@@ -36,7 +36,7 @@
 /*Produktbild*/
 .produktbild {
     width: 100%;
-    max-width: 100px;
+    max-width: 300px;
     height:auto;
     object-fit: cover;
     border-radius: 5px;
