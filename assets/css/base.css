@@ -1,6 +1,5 @@
-/* ================================================================= */
-/* Root & Globale Stile */
-/* ================================================================= */
+
+/* Farbpalette */
 :root {
     --color-primary: #2F4156;
     --color-secondary: #567C8D;
@@ -65,9 +64,8 @@ main > h1 + p {
     text-align: left;
 }
 
-/* ================================================================= */
+
 /* Hero Section */
-/* ================================================================= */
 .hero {
     position: relative;
     left: 50%;
@@ -233,18 +231,16 @@ main > h1 + p {
     background: var(--color-secondary);
 }
 
-/* ================================================================= */
 /* Products Section */
-/* ================================================================= */
-.start-products {
+.products {
     margin: 0 0 72px;
 }
 
-.start-products__heading {
+.products-heading {
     margin-bottom: 24px;
 }
 
-.start-products__eyebrow {
+.products-eyebrow {
     margin: 0 0 8px;
     color: var(--color-primary);
     font-family: "Courier New", monospace;
@@ -254,20 +250,20 @@ main > h1 + p {
     text-transform: uppercase;
 }
 
-.start-products__heading h2 {
+.products-heading h2 {
     margin: 0;
     color: var(--color-primary);
     font-size: clamp(1.7rem, 3.5vw, 2.5rem);
     line-height: 1.2;
 }
 
-.start-products__grid {
+.products-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
 
-.start-product {
+.product {
     overflow: hidden;
     border: 1px solid var(--color-blue-light);
     border-radius: 14px;
@@ -275,12 +271,12 @@ main > h1 + p {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.start-product:hover {
+.product:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 28px rgba(47, 65, 86, 0.14);
 }
 
-.start-product__link {
+.product-link {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -288,13 +284,13 @@ main > h1 + p {
     text-decoration: none;
 }
 
-.start-product__link:focus-visible,
-.start-products__all a:focus-visible {
+.product-link:focus-visible,
+.products-all a:focus-visible {
     outline: 3px solid var(--color-secondary);
     outline-offset: 4px;
 }
 
-.start-product__link > img {
+.product-link > img {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 10;
@@ -302,7 +298,7 @@ main > h1 + p {
     background-color: var(--color-background);
 }
 
-.start-product__content {
+.product-content {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -310,38 +306,36 @@ main > h1 + p {
     padding: 20px;
 }
 
-.start-product__content h3 {
+.product-content h3 {
     margin: 0 0 8px;
     color: var(--color-primary);
     font-size: 1.3rem;
 }
 
-.start-product__content p {
+.product-content p {
     margin: 0 0 18px;
     color: var(--color-secondary);
 }
 
-.start-product__content > span {
+.product-content > span {
     margin-top: auto;
     color: var(--color-primary);
     font-weight: 700;
 }
 
-.start-products__all {
+.products-all {
     margin: 22px 0 0;
     text-align: right;
 }
 
-.start-products__all a {
+.products-all a {
     color: var(--color-primary);
     font-weight: 700;
     text-underline-offset: 4px;
 }
 
-/* ================================================================= */
 /* Steps Section */
-/* ================================================================= */
-.start-steps {
+.steps {
     margin: 0 0 72px;
     padding: clamp(24px, 4vw, 40px);
     border: 1px solid var(--color-blue-light);
@@ -350,24 +344,24 @@ main > h1 + p {
     box-shadow: 0 14px 36px rgba(47, 65, 86, 0.08);
 }
 
-.start-steps > h2 {
+.steps > h2 {
     margin: 0 0 24px;
     color: var(--color-primary);
     font-size: clamp(1.7rem, 3.5vw, 2.5rem);
     line-height: 1.2;
 }
 
-.start-steps__list {
+.steps-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 14px;
     margin: 0;
     padding: 0;
-    counter-reset: start-step;
+    counter-reset: step-number;
     list-style: none;
 }
 
-.start-steps__list li {
+.steps-list li {
     display: flex;
     min-width: 0;
     min-height: 190px;
@@ -378,11 +372,11 @@ main > h1 + p {
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.88);
     box-shadow: 0 6px 18px rgba(47, 65, 86, 0.06);
-    counter-increment: start-step;
+    counter-increment: step-number;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.start-steps__list li::before {
+.steps-list li::before {
     display: grid;
     width: 40px;
     height: 40px;
@@ -390,19 +384,19 @@ main > h1 + p {
     border-radius: 50%;
     background: var(--color-blue-light);
     color: var(--color-primary);
-    content: counter(start-step, decimal-leading-zero);
+    content: counter(step-number, decimal-leading-zero);
     font-size: 0.85rem;
     font-weight: 700;
     place-items: center;
 }
 
-.start-steps__list li:hover {
+.steps-list li:hover {
     transform: translateY(-4px);
     border-color: var(--color-secondary);
     box-shadow: 0 12px 24px rgba(47, 65, 86, 0.12);
 }
 
-.start-steps__title {
+.step-title {
     margin-bottom: 12px;
     color: var(--color-primary);
     font-size: 1.05rem;
@@ -410,7 +404,7 @@ main > h1 + p {
     line-height: 1.35;
 }
 
-.start-steps__list a {
+.steps-list a {
     margin-top: auto;
     color: var(--color-primary);
     font-size: 0.9rem;
@@ -419,42 +413,40 @@ main > h1 + p {
     text-underline-offset: 4px;
 }
 
-.start-steps__list a::after {
+.steps-list a::after {
     content: " →";
 }
 
-.start-steps__list a:hover,
-.start-steps__list a:focus-visible {
+.steps-list a:hover,
+.steps-list a:focus-visible {
     text-decoration: underline;
 }
 
-.start-steps__list a:focus-visible {
+.steps-list a:focus-visible {
     border-radius: 2px;
     outline: 3px solid var(--color-secondary);
     outline-offset: 4px;
 }
 
-/* ================================================================= */
 /* Info & Technik Section */
-/* ================================================================= */
-.start-info {
+.info {
     margin: 0 0 72px;
 }
 
-.start-info > h2 {
+.info > h2 {
     margin: 0 0 24px;
     color: var(--color-primary);
     font-size: clamp(1.7rem, 3.5vw, 2.5rem);
     line-height: 1.2;
 }
 
-.start-info__grid {
+.info-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
 
-.start-info__card {
+.info-card {
     padding: 24px;
     border: 1px solid var(--color-blue-light);
     border-top: 4px solid var(--color-secondary);
@@ -464,24 +456,24 @@ main > h1 + p {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.start-info__card:hover {
+.info-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 14px 28px rgba(47, 65, 86, 0.13);
 }
 
-.start-info__card h3 {
+.info-card h3 {
     margin: 0 0 12px;
     color: var(--color-primary);
     font-size: 1.3rem;
 }
 
-.start-info__card p {
+.info-card p {
     margin: 0;
     color: var(--color-secondary);
     line-height: 1.7;
 }
 
-.start-info__card ul {
+.info-card ul {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -490,7 +482,7 @@ main > h1 + p {
     list-style: none;
 }
 
-.start-info__card li {
+.info-card li {
     padding: 6px 12px;
     border-radius: 999px;
     background: var(--color-background);
@@ -498,12 +490,12 @@ main > h1 + p {
     font-size: 0.9rem;
 }
 
-.start-info__cta {
+.info-cta {
     margin: 24px 0 0;
     text-align: right;
 }
 
-.start-info__cta a {
+.info-cta a {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 10px;
@@ -514,12 +506,12 @@ main > h1 + p {
     transition: background-color 0.2s ease;
 }
 
-.start-info__cta a:hover,
-.start-info__cta a:focus-visible {
+.info-cta a:hover,
+.info-cta a:focus-visible {
     background: var(--color-secondary);
 }
 
-.start-info__cta a:focus-visible {
+.info-cta a:focus-visible {
     outline: 3px solid var(--color-secondary);
     outline-offset: 4px;
 }
@@ -560,9 +552,7 @@ main > h1 + p {
     line-height: 1.7;
 }
 
-/* ================================================================= */
 /* Content & Tables */
-/* ================================================================= */
 .content-section {
     background-color: var(--color-white);
     padding: 30px;
@@ -639,30 +629,30 @@ tbody tr:hover {
         margin-bottom: 18px;
     }
 
-    .start-info__grid {
+    .info-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .start-products__grid {
+    .products-grid {
         grid-template-columns: 1fr;
         gap: 16px;
     }
 
-    .start-product__link {
+    .product-link {
         display: grid;
         grid-template-columns: minmax(100px, 36%) 1fr;
     }
 
-    .start-product__link > img {
+    .product-link > img {
         height: 100%;
         aspect-ratio: auto;
     }
 
-    .start-product__content {
+    .product-content {
         padding: 16px;
     }
 
-    .start-products__all {
+    .products-all {
         text-align: left;
     }
 
@@ -688,34 +678,34 @@ tbody tr:hover {
 }
 
 @media (max-width: 560px) {
-    .start-steps {
+    .steps {
         margin-bottom: 56px;
         padding: 22px;
     }
 
-    .start-steps__list {
+    .steps-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
     }
 
-    .start-steps__list li {
+    .steps-list li {
         min-height: 180px;
         padding: 16px;
     }
 
-    .start-info {
+    .info {
         margin-bottom: 56px;
     }
 
-    .start-info__card {
+    .info-card {
         padding: 20px;
     }
 
-    .start-info__cta {
+    .info-cta {
         text-align: left;
     }
 
-    .start-info__grid {
+    .info-grid {
         grid-template-columns: 1fr;
         gap: 16px;
     }
@@ -723,14 +713,14 @@ tbody tr:hover {
 
 
 @media (prefers-reduced-motion: reduce) {
-    .start-steps__list li,
-    .start-info__card,
+    .steps-list li,
+    .info-card,
     .hero .hero-cta {
         transition: none;
     }
 
-    .start-steps__list li:hover,
-    .start-info__card:hover,
+    .steps-list li:hover,
+    .info-card:hover,
     .hero .hero-cta:hover {
         transform: none;
     }
