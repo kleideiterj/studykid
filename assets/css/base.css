@@ -617,26 +617,6 @@ tbody tr:hover {
 /* ================================================================= */
 /* Media Queries */
 /* ================================================================= */
-@media (prefers-reduced-motion: reduce) {
-    .start-steps__list li,
-    .start-info__card,
-    .hero .hero-cta {
-        transition: none;
-    }
-
-    .start-steps__list li:hover,
-    .start-info__card:hover,
-    .hero .hero-cta:hover {
-        transform: none;
-    }
-}
-
-@media (max-width: 1000px) {
-    .start-steps__list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
 @media (max-width: 760px) {
     .hero {
         grid-template-columns: 1fr;
@@ -741,12 +721,17 @@ tbody tr:hover {
     }
 }
 
-@media (max-width: 380px) {
-    .start-steps__list {
-        grid-template-columns: 1fr;
+
+@media (prefers-reduced-motion: reduce) {
+    .start-steps__list li,
+    .start-info__card,
+    .hero .hero-cta {
+        transition: none;
     }
 
-    .start-steps__list li {
-        min-height: 0;
+    .start-steps__list li:hover,
+    .start-info__card:hover,
+    .hero .hero-cta:hover {
+        transform: none;
     }
 }

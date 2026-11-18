@@ -128,3 +128,56 @@ main section details > p {
     border-radius: 0;
     background: none;
 }
+
+/* ================================================================= */
+/* Media Queries */
+/* ================================================================= */
+
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    header nav ul,
+    footer nav ul {
+        justify-content: center;
+        gap: 2px;
+    }
+
+    header nav a {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 40px 16px;
+    }
+
+    main section details summary {
+        padding: 14px 16px;
+    }
+
+    main section details > p {
+        padding: 0 16px 16px;
+    }
+
+    footer {
+        padding: 28px 16px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 32px 12px;
+    }
+}

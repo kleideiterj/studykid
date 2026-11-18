@@ -142,7 +142,7 @@ main > ul li {
     background-color: var(--color-white);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     main {
         width: calc(100% - 32px);
         margin: 28px auto;
@@ -160,5 +160,15 @@ main > ul li {
         width: 100%;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 560px) {
+    main > h1 {
+        padding: 24px 18px;
+    }
+
+    main > ul li {
+        padding: 12px 14px;
     }
 }

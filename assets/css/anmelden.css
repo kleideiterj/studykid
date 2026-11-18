@@ -146,6 +146,10 @@ main > footer {
         padding-top: 40px;
     }
 
+    main > h1 {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+
     main > footer {
         padding: 28px 20px;
     }
@@ -153,6 +157,18 @@ main > footer {
     main > form > div:first-child {
         grid-template-columns: 1fr;
         gap: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    main {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    main > form {
+        padding: 20px;
+        border-radius: 12px;
     }
 }
 
