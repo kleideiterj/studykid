@@ -1,55 +1,61 @@
 
-main {
+.studentenrabatt-page,
+.kasse-page,
+.bestelluebersicht-page,
+.bestellbestaetigung-page {
     width: min(1120px, calc(100% - 40px));
     margin: 40px auto;
     color: var(--color-primary);
 }
 
-main > h1 {
+.studentenrabatt-page > h1,
+.kasse-page > h1,
+.bestelluebersicht-page > h1,
+.bestellbestaetigung-page > h1 {
     display: block;
     width: 100%;
     min-height: 0;
-    margin: 0 0 32px;
-    padding: clamp(32px, 6vw, 64px);
+    margin: 0 0 28px;
+    padding: clamp(28px, 5vw, 48px);
     border: 1px solid var(--color-blue-light);
-    border-radius: 20px;
+    border-radius: 18px;
     background-color: var(--color-blue-light);
     box-shadow: 0 12px 32px rgba(47, 65, 86, 0.1);
     color: var(--color-primary);
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     letter-spacing: -0.04em;
     line-height: 1.1;
     text-align: left;
     text-shadow: none;
 }
 
-main > h1 + p {
-    display: none;
-}
-
-main > hr {
-    margin: 32px 0;
-    border: 0;
-    border-top: 1px solid var(--color-blue-light);
-}
-
-main > h2 {
+.studentenrabatt-page > h2,
+.kasse-page > h2,
+.bestelluebersicht-page > h2 {
     margin: 28px 0 12px;
     color: var(--color-primary);
     font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
 
-main > hr + h2 {
+.studentenrabatt-page > hr,
+.kasse-page > hr,
+.bestelluebersicht-page > hr {
+    margin: 28px 0;
+    border: 0;
+    border-top: 1px solid var(--color-blue-light);
+}
+
+.studentenrabatt-page > h1 + hr {
     margin-top: 0;
 }
 
-main > label[for="bescheid"] {
+.studentenrabatt-page > label[for="bescheid"] {
     display: block;
     margin: 24px 0 8px;
     font-weight: 700;
 }
 
-main > input[type="file"] {
+.studentenrabatt-page > input[type="file"] {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -63,7 +69,7 @@ main > input[type="file"] {
     cursor: pointer;
 }
 
-main > input[type="file"]::file-selector-button {
+.studentenrabatt-page > input[type="file"]::file-selector-button {
     margin-right: 14px;
     padding: 10px 16px;
     border: 0;
@@ -76,25 +82,68 @@ main > input[type="file"]::file-selector-button {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-main > input[type="file"]::file-selector-button:hover {
+.studentenrabatt-page > input[type="file"]::file-selector-button:hover {
     transform: translateY(-1px);
     background-color: var(--color-secondary);
 }
 
-main > input[type="checkbox"] {
+.studentenrabatt-page > input[type="checkbox"],
+.kasse-page > input[type="radio"] {
     width: 18px;
     height: 18px;
-    margin: 0 8px 0 0;
+    margin: 0 10px 0 0;
     accent-color: var(--color-secondary);
     vertical-align: middle;
 }
 
-main > input[type="checkbox"] + label {
-    display: inline;
+.studentenrabatt-page > input[type="checkbox"] + label {
     vertical-align: middle;
 }
 
-main > a {
+.kasse-page > input[type="radio"] + label {
+    display: inline-flex;
+    width: calc(100% - 32px);
+    min-height: 54px;
+    align-items: center;
+    gap: 12px;
+    margin: 5px 0;
+    padding: 10px 16px;
+    border: 1px solid var(--color-blue-light);
+    border-radius: 10px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.kasse-page > input[type="radio"] + label img {
+    max-width: 90px;
+    max-height: 30px;
+    margin-left: auto;
+    object-fit: contain;
+}
+
+.kasse-page > input[type="radio"]:checked + label {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 2px rgba(86, 124, 141, 0.15);
+}
+
+.kasse-page > input[type="radio"]:focus-visible + label {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+.kasse-page > h3 {
+    margin: 24px 0 8px;
+    color: var(--color-primary);
+}
+
+.kasse-page > p {
+    margin: 12px 0;
+}
+
+.studentenrabatt-page > a,
+.kasse-page > a,
+.bestellbestaetigung-page > a {
     display: inline-flex;
     margin: 12px 0 0;
     border-radius: 8px;
@@ -102,7 +151,10 @@ main > a {
     text-decoration: none;
 }
 
-main > a button {
+.studentenrabatt-page button,
+.kasse-page button,
+.bestelluebersicht-page button,
+.bestellbestaetigung-page button {
     min-height: 48px;
     padding: 12px 22px;
     border: 0;
@@ -115,19 +167,29 @@ main > a button {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-main > a:hover button {
-    transform: translateY(-2px);
+.studentenrabatt-page button:hover,
+.kasse-page button:hover,
+.bestelluebersicht-page button:hover,
+.bestellbestaetigung-page button:hover {
+    transform: translateY(-1px);
     background-color: var(--color-secondary);
 }
 
-main > a:focus-visible,
-main > a button:focus-visible,
-main > input:focus-visible {
+.studentenrabatt-page a:focus-visible,
+.kasse-page a:focus-visible,
+.bestelluebersicht-page a:focus-visible,
+.bestellbestaetigung-page a:focus-visible,
+.studentenrabatt-page button:focus-visible,
+.kasse-page button:focus-visible,
+.bestelluebersicht-page button:focus-visible,
+.bestellbestaetigung-page button:focus-visible,
+.studentenrabatt-page input:focus-visible,
+.kasse-page input:focus-visible {
     outline: 3px solid var(--color-secondary);
     outline-offset: 3px;
 }
 
-main > ul {
+.studentenrabatt-page > ul {
     display: grid;
     gap: 12px;
     margin: 16px 0 0;
@@ -135,40 +197,208 @@ main > ul {
     list-style: none;
 }
 
-main > ul li {
+.studentenrabatt-page > ul li {
     padding: 14px 16px;
     border: 1px solid var(--color-blue-light);
     border-radius: 10px;
     background-color: var(--color-white);
 }
 
+.bestelluebersicht-page > .warenkorb-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+    align-items: start;
+    gap: 24px;
+}
+
+.bestelluebersicht-page .warenkorb-layout > div {
+    min-width: 0;
+}
+
+.bestelluebersicht-page .warenkorb-layout > div:last-child,
+.bestelluebersicht-page .warenkorb-layout > div:first-child > div {
+    padding: 22px;
+    border: 1px solid var(--color-blue-light);
+    border-radius: 14px;
+    background-color: var(--color-white);
+    box-shadow: 0 8px 22px rgba(47, 65, 86, 0.08);
+}
+
+.bestelluebersicht-page .warenkorb-layout > div:first-child > div {
+    margin-top: 18px;
+}
+
+.bestelluebersicht-page .warenkorb-layout > div:first-child > hr,
+.bestelluebersicht-page .warenkorb-layout > div:last-child > hr {
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid var(--color-blue-light);
+}
+
+.bestelluebersicht-page .warenkorb-item {
+    margin: 0 0 16px;
+}
+
+.bestelluebersicht-page .item-details {
+    padding: 18px;
+    border: 1px solid var(--color-blue-light);
+    border-radius: 14px;
+    background-color: var(--color-white);
+    box-shadow: 0 6px 18px rgba(47, 65, 86, 0.06);
+}
+
+.bestelluebersicht-page .produkt-inhalt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bestelluebersicht-page .produkt-inhalt img {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.bestelluebersicht-page .produkt-info {
+    min-width: 0;
+}
+
+.bestelluebersicht-page .produkt-info h2 {
+    margin: 0 0 10px;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+}
+
+.bestelluebersicht-page .warenkorb-layout h3 {
+    margin: 0 0 10px;
+    color: var(--color-primary);
+}
+
+.bestelluebersicht-page .produkt-info p,
+.bestelluebersicht-page .warenkorb-layout p {
+    color: var(--color-primary);
+    line-height: 1.6;
+}
+
+.bestelluebersicht-page .preis {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.bestelluebersicht-page .warenkorb-layout input[type="text"] {
+    width: 100%;
+    min-height: 46px;
+    margin: 8px 0 4px;
+    padding: 10px 12px;
+    border: 1px solid var(--color-blue-light);
+    border-radius: 8px;
+    color: var(--color-primary);
+    font: inherit;
+}
+
+.bestelluebersicht-page .zahlung {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.bestelluebersicht-page .zahlung img {
+    max-width: 72px;
+    object-fit: contain;
+}
+
+.bestellbestaetigung-page {
+    max-width: 760px;
+    padding: 32px;
+    border: 1px solid var(--color-blue-light);
+    border-radius: 16px;
+    background-color: var(--color-white);
+    box-shadow: 0 12px 32px rgba(47, 65, 86, 0.1);
+}
+
+.bestellbestaetigung-page > h1 {
+    margin-bottom: 20px;
+    padding: 24px;
+}
+
+.bestellbestaetigung-page > a {
+    display: flex;
+    width: fit-content;
+}
+
+@media (max-width: 900px) {
+    .bestelluebersicht-page > .warenkorb-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 760px) {
-    main {
+    .studentenrabatt-page,
+    .kasse-page,
+    .bestelluebersicht-page,
+    .bestellbestaetigung-page {
         width: calc(100% - 32px);
         margin: 28px auto;
         padding: 0;
     }
 
-    main > h1 {
+    .studentenrabatt-page > h1,
+    .kasse-page > h1,
+    .bestelluebersicht-page > h1,
+    .bestellbestaetigung-page > h1 {
         margin-bottom: 24px;
         padding: 28px 22px;
         border-radius: 14px;
     }
-
-    main > a,
-    main > a button {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
 }
 
 @media (max-width: 560px) {
-    main > h1 {
-        padding: 24px 18px;
+    .studentenrabatt-page,
+    .kasse-page,
+    .bestelluebersicht-page {
+        width: calc(100% - 24px);
     }
 
-    main > ul li {
-        padding: 12px 14px;
+    .studentenrabatt-page > h1,
+    .kasse-page > h1,
+    .bestelluebersicht-page > h1,
+    .bestellbestaetigung-page > h1 {
+        padding: 22px 18px;
+    }
+
+    .kasse-page > input[type="radio"] + label {
+        width: calc(100% - 30px);
+        padding: 10px;
+    }
+
+    .bestelluebersicht-page .warenkorb-layout > div:last-child,
+    .bestelluebersicht-page .warenkorb-layout > div:first-child > div,
+    .bestelluebersicht-page .item-details {
+        padding: 16px;
+    }
+
+    .bestelluebersicht-page .produkt-inhalt {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bestelluebersicht-page .produkt-inhalt img {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    .bestellbestaetigung-page {
+        padding: 20px;
+    }
+
+    .studentenrabatt-page button,
+    .kasse-page button,
+    .bestelluebersicht-page button,
+    .bestellbestaetigung-page button {
+        width: 100%;
     }
 }
