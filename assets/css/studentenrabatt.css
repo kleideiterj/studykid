@@ -36,6 +36,8 @@
     color: var(--color-primary);
     font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
+ 
+
 
 .studentenrabatt-page > hr,
 .kasse-page > hr,
@@ -222,6 +224,9 @@
     border-radius: 14px;
     background-color: var(--color-white);
     box-shadow: 0 8px 22px rgba(47, 65, 86, 0.08);
+
+    position: sticky; /*Beim Scrollen sichtbar*/
+    top: 20px;
 }
 
 .bestelluebersicht-page .warenkorb-layout > div:first-child > div {
@@ -328,6 +333,37 @@
     display: flex;
     width: fit-content;
 }
+
+/*Kasse*/
+.payment-option {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 5px;
+    background: white;
+    transition: 0.2s;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 12px;
+}
+
+.payment-option label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Umrandung bei Auswahl */
+.payment-option:has(input:checked) {
+    border-color: var(--color-blue-light);
+    box-shadow: 0 0 0 2px rgba(0, 112, 186, 0.2);
+}
+
 
 @media (max-width: 900px) {
     .bestelluebersicht-page > .warenkorb-layout {
