@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -11,22 +12,29 @@
 </head>
 
 <body>
-<header>
+
+    <a class="skip-link" href="#hauptinhalt">Zum Hauptinhalt springen</a>
+
+    <header>
         <p><a href="../../index.html"><img src="../../assets/img/studybox-hut-logo.png"
                     alt="StudyBox – zur Startseite" width="80"></a></p>
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="../../index.html" aria-current="page">Übersicht</a></li>
+                <li><a href="../../index.html">Übersicht</a></li>
                 <li><a href="../bundles/bundle.html">Bundles</a></li>
                 <li><a href="../warenkorb/studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="../konto/profilAnmelden.html"> <img src="../../assets/img/profil.png" alt="Mein Profil" width="50"
-                            title="Mein Profil"></a></li>
-                <li><a href="../warenkorb/warenkorb.html"><img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50"
-                            title="Warenkorb"></a></li>
+                <li><a href="../konto/profilAnmelden.html">
+                    <img src="../../assets/img/profil.png" alt="Mein Profil" width="50"
+                        title="Mein Profil"></a></li>
+                <li><a href="../warenkorb/warenkorb.html">
+                    <img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50"
+                        title="Warenkorb"></a></li>
             </ul>
         </nav>
     </header>
-    <main class="bestelluebersicht-page">
+
+    <main id="hauptinhalt" class="bestelluebersicht-page">
+
         <h1>Bestellübersicht</h1>
         <a href="kasse.html"><button>Zur Kasse</button></a>
 
@@ -45,7 +53,7 @@
 
             <!-- Linke Seite -->
             <div>
-                <section class="warenkorb-produkte">
+                <section class="warenkorb-produkte" aria-label="Bestellte Produkte">
 
                     <!-- Wirtschaft & Digitales Bundle -->
                     <div class="warenkorb-item">
@@ -111,8 +119,8 @@
 
                 <div>
                     <h3>Gutscheine &amp; Rabatte</h3>
-                    <label>Code eingeben:</label><br>
-                    <input type="text" required>
+                    <label for="rabattcode">Code eingeben:</label><br>
+                    <input type="text" id="rabattcode" name="rabattcode" required>
                     <a href="2bestelluebersicht.html"><button>Rabatt anwenden</button></a>
                 </div>
             </div>
@@ -127,7 +135,7 @@
                 <p>Lieferung: kostenfrei</p>
                 <p><strong>Gesamtpreis: 2.294,98 €</strong></p>
 
-                    <a href="bestellt.html"><button> Zur Bestätigung</button></a>
+                <a href="bestellt.html"><button> Zur Bestätigung</button></a>
 
                 <hr>
 
@@ -163,7 +171,8 @@
                 <li><a href="../footer/datenschutz.html">Datenschutz</a></li>
             </ul>
         </nav>
-        <p><img src="../../assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten" width="80"></p>
+        <p><img src="../../assets/img/studybox-logo-weiss.png"
+            alt="StudyBox - Digitale Starterpakete für Studenten" width="80"></p>
     </footer>
 
 </body>

@@ -1,124 +1,159 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasse</title>
+    <meta name="description" content="Wähle deine Zahlungsart für deine StudyBox-Bestellung.">
     <link rel="stylesheet" href="../../assets/css/basic.css">
     <link rel="stylesheet" href="../../assets/css/studentenrabatt.css">
 </head>
 
 <body>
+
+    <a class="skip-link" href="#hauptinhalt">Zum Hauptinhalt springen</a>
+
     <header>
-        <p><a href="../../index.html"><img src="../../assets/img/studybox-hut-logo.png"
-                    alt="StudyBox – zur Startseite" width="80"></a></p>
+        <p>
+            <a href="../../index.html">
+                <img src="../../assets/img/studybox-hut-logo.png"
+                    alt="StudyBox – zur Startseite" width="80">
+            </a>
+        </p>
+
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="../../index.html" aria-current="page">Übersicht</a></li>
+                <li><a href="../../index.html">Übersicht</a></li>
                 <li><a href="../bundles/bundle.html">Bundles</a></li>
                 <li><a href="../warenkorb/studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="../konto/profilAnmelden.html"> <img src="../../assets/img/profil.png" alt="Mein Profil" width="50"
-                            title="Mein Profil"></a></li>
-                <li><a href="../warenkorb/warenkorb.html"><img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50"
-                            title="Warenkorb"></a></li>
+                <li>
+                    <a href="../konto/profilAnmelden.html">
+                        <img src="../../assets/img/profil.png"
+                            alt="Mein Profil" width="50" title="Mein Profil">
+                    </a>
+                </li>
+                <li>
+                    <a href="../warenkorb/warenkorb.html">
+                        <img src="../../assets/img/warenkorb.png"
+                            alt="Warenkorb" width="50" title="Warenkorb">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="kasse-page">
-        <h1>Kasse </h1>
-        <a href="warenkorb.html"><button>Zurück zum Warenkorb</button></a>
+
+    <main id="hauptinhalt" class="kasse-page">
+
+        <h1>Kasse</h1>
+
+        <a href="warenkorb.html">
+            <button type="button">Zurück zum Warenkorb</button>
+        </a>
+
         <br>
         <br>
         <hr>
         <br>
-        <h2>Zahlungsart</h2>
 
-            <input type="radio" id="paypal" name="zahlung">
-            <label for="paypal">
-                PayPal
-                <img src="../../assets/img/paypal.png" alt="PayPal" height="30">
-            </label>
+        <h2 id="zahlungsart">Zahlungsart</h2>
 
-            <br><br>
+        <input type="radio" id="paypal" name="zahlung" value="paypal">
+        <label for="paypal">
+            PayPal
+            <img src="../../assets/img/paypal.png" alt="" height="30">
+        </label>
 
-            <input type="radio" id="applepay" name="zahlung">
-            <label for="applepay">
-                Apple Pay
-                <img src="../../assets/img/applepay.png" alt="Apple Pay" height="30">
-            </label>
+        <br><br>
 
-            <br><br>
+        <input type="radio" id="applepay" name="zahlung" value="applepay">
+        <label for="applepay">
+            Apple Pay
+            <img src="../../assets/img/applepay.png" alt="" height="30">
+        </label>
 
-            <input type="radio" id="visa" name="zahlung">
-            <label for="visa">
-                Visa
-                <img src="../../assets/img/visa.png" alt="Visa" height="30">
-            </label>
+        <br><br>
 
-            <br><br>
+        <input type="radio" id="visa" name="zahlung" value="visa">
+        <label for="visa">
+            Visa
+            <img src="../../assets/img/visa.png" alt="" height="30">
+        </label>
 
-            <input type="radio" id="mastercard" name="zahlung">
-            <label for="mastercard">
-                Mastercard
-                <img src="../../assets/img/mastercard.png" alt="Mastercard" height="30">
-            </label>
+        <br><br>
 
-            <br><br>
+        <input type="radio" id="mastercard" name="zahlung" value="mastercard">
+        <label for="mastercard">
+            Mastercard
+            <img src="../../assets/img/mastercard.png" alt="" height="30">
+        </label>
 
-            <input type="radio" id="klarna" name="zahlung">
-            <label for="klarna">
-                Klarna
-                <img src="../../assets/img/klarna.png" alt="Klarna" height="30">
-            </label>
+        <br><br>
 
-            <br><br>
+        <input type="radio" id="klarna" name="zahlung" value="klarna">
+        <label for="klarna">
+            Klarna
+            <img src="../../assets/img/klarna.png" alt="" height="30">
+        </label>
 
-            <input type="radio" id="rechnung" name="zahlung">
-            <label for="rechnung">
-                Rechnung
-            </label>
+        <br><br>
 
-            <br><br>
-            <input type="radio" id="Geschenkgutscheine" name="zahlung">
-            <label for="Geschenkgutscheine">
-                Geschenkgutschein/ keine vorhanden.
-            </label>
+        <input type="radio" id="rechnung" name="zahlung" value="rechnung">
+        <label for="rechnung">
+            Rechnung
+        </label>
 
-            <br><br>
+        <br><br>
 
-            <h3>Zwischensumme: 2.549,98 €</h3>
+        <input type="radio" id="Geschenkgutscheine" name="zahlung" value="geschenkgutschein">
+        <label for="Geschenkgutscheine">
+            Geschenkgutschein/ keine vorhanden.
+        </label>
 
-            <p>Lieferung: 4,99 €</p>
+        <br><br>
 
-            <hr>
+        <h3>Zwischensumme: 2.549,98 €</h3>
 
-            <h2>Gesamtsumme: 2.554,97 €</h2>
+        <p>Lieferung: 4,99 €</p>
 
-            <p>MwSt.</p>
+        <hr>
 
-            <p>Bestellung im nächsten Schritt<br>
-                überprüfen und absenden</p>
+        <h2>Gesamtsumme: 2.554,97 €</h2>
 
-            <a href="bestelluebersicht.html"><button>Weiter</button></a>
+        <p>MwSt.</p>
+
+        <p>
+            Bestellung im nächsten Schritt<br>
+            überprüfen und absenden
+        </p>
+
+        <a href="bestelluebersicht.html">
+            <button type="button">Weiter</button>
+        </a>
 
     </main>
-    
+
     <footer>
-        <nav aria-label="Footer">
+
+        <nav aria-label="Footernavigation">
             <ul>
                 <li><a href="../footer/ueber.html">Über uns</a></li>
                 <li><a href="../footer/faq.html">FAQ</a></li>
                 <li><a href="../footer/impressum.html">Impressum</a></li>
                 <li><a href="../footer/datenschutz.html">Datenschutz</a></li>
-                
             </ul>
         </nav>
 
         <p>
-            <img src="../../assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten"
+            <img src="../../assets/img/studybox-logo-weiss.png"
+                alt="StudyBox - Digitale Starterpakete für Studenten"
                 width="80">
         </p>
+
     </footer>
+
 </body>
 
 </html>
+```
