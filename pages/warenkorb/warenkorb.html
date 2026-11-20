@@ -1,176 +1,230 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Warenkorb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBox – Warenkorb</title>
+    <meta name="description" content="Übersicht deiner ausgewählten StudyBox-Produkte im Warenkorb.">
     <link rel="stylesheet" href="../../assets/css/basic.css">
     <link rel="stylesheet" href="../../assets/css/warenkorb.css">
 </head>
 
 <body>
 
-   
-        <header>
-        <p><a href="../../index.html"><img src="../../assets/img/studybox-hut-logo.png"
-                    alt="StudyBox – zur Startseite" width="80"></a></p>
+ 
+
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="../../assets/img/studybox-hut-logo.png"
+                    alt="StudyBox – zur Startseite" width="80">
+            </a>
+        </p>
+
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="../../index.html" aria-current="page">Übersicht</a></li>
+                <li><a href="../../index.html">Übersicht</a></li>
                 <li><a href="../bundles/bundle.html">Bundles</a></li>
                 <li><a href="../warenkorb/studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="../konto/profilAnmelden.html"> <img src="../../assets/img/profil.png" alt="Mein Profil" width="50"
-                            title="Mein Profil"></a></li>
-                <li><a href="../warenkorb/warenkorb.html"><img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50"
-                            title="Warenkorb"></a></li>
+                <li>
+                    <a href="../konto/profilAnmelden.html">
+                        <img src="../../assets/img/Profil.png"
+                            alt="Mein Profil" width="50" title="Mein Profil">
+                    </a>
+                </li>
+                <li>
+                    <a href="../warenkorb/warenkorb.html" aria-current="page">
+                        <img src="../../assets/img/warenkorb.png"
+                            alt="Warenkorb" width="50" title="Warenkorb">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="hauptinhalt">
 
         <h1>Warenkorb</h1>
 
         <div class="warenkorb-layout">
 
-            <section class="warenkorb-produkte">
+            <section class="warenkorb-produkte" aria-label="Produkte im Warenkorb">
 
                 <div class="warenkorb-item">
 
-                    <!-- Wirtschaft & Management Box -->
-                    <div class="item-details">
-                        <div class="produkt-inhalt">
+                    <!-- Wirtschaft und Digitales Bundle -->
+                    <article class="item-details">
 
+                        <div class="produkt-inhalt">
 
                             <a href="wirtschaft-digitales-bundle.html">
                                 <img src="../../assets/img/kit-wirtschaft-digitales.jpg"
-                                    alt="StudyBox Wirtschaft und Digitales Bundle" loading="lazy">
+                                    alt="StudyBox Wirtschaft und Digitales Bundle"
+                                    loading="lazy">
                             </a>
 
                             <div class="produkt-info">
 
-                                <h2>Wirtschaft & Digitales Bundle</h2>
-                                <p>Das Premium-Studienpaket für digitale Studiengänge. Mit Notebook, Monitor, Tablet und
-                                    passendem Zubehör für maximale Produktivität.</p>
+                                <h2>Wirtschaft &amp; Digitales Bundle</h2>
+
+                                <p>
+                                    Das Premium-Studienpaket für digitale Studiengänge.
+                                    Mit Notebook, Monitor, Tablet und passendem Zubehör
+                                    für maximale Produktivität.
+                                </p>
+
                                 <p class="preis">Preis: 1.349,99 €</p>
 
                                 <div class="anzahl">
-                                    <label for="anzahl1">Anzahl:</label>
+                                    <label for="anzahl1">Anzahl Wirtschaft &amp; Digitales Bundle:</label>
 
-                                    <select id="anzahl1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select id="anzahl1" name="anzahl-wirtschaft">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
                                     </select>
-
-                                    <br><br><br><br>
                                 </div>
 
                             </div>
 
                         </div>
 
-                        <button>Entfernen</button>
-                    </div>
+                        <button type="button" aria-label="Wirtschaft und Digitales Bundle entfernen">
+                            Entfernen
+                        </button>
+
+                    </article>
+
                     <br>
 
-                    <!-- Informatik Box -->
-                    <div class="item-details">
+                    <!-- Informatik Bundle -->
+                    <article class="item-details">
+
                         <div class="produkt-inhalt">
 
-
-                            <a href="informatik-bundle.html">
-                                <img src="../../assets/img/kit-informatik.jpg" alt="StudyBox Informatik Bundle"
+                            <a href="../bundles/informatik-bundle.html">
+                                <img src="../../assets/img/kit-informatik.jpg"
+                                    alt="StudyBox Informatik Bundle"
                                     loading="lazy">
                             </a>
 
                             <div class="produkt-info">
 
                                 <h2>StudyBox Informatik Bundle</h2>
-                                <p>Leistungsstarkes Komplettpaket mit Intel Core i7, 16 GB RAM, 512 GB SSD, Tablet und
-                                    24"-Monitor für Coding, Cloud-Computing und Datenbanken</p>
+
+                                <p>
+                                    Leistungsstarkes Komplettpaket mit Intel Core i7,
+                                    16 GB RAM, 512 GB SSD, Tablet und 24"-Monitor
+                                    für Coding, Cloud-Computing und Datenbanken.
+                                </p>
+
                                 <p class="preis">Preis: 1.199,99 €</p>
 
                                 <div class="anzahl">
-                                    <label for="anzahl2">Anzahl:</label>
+                                    <label for="anzahl2">Anzahl Informatik Bundle:</label>
 
-                                    <select id="anzahl2">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select id="anzahl2" name="anzahl-informatik">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
                                     </select>
-
-                                    <br><br><br><br>
                                 </div>
 
                             </div>
 
                         </div>
 
-                        <button>Entfernen</button>
-                    </div>
+                        <button type="button" aria-label="Informatik Bundle entfernen">
+                            Entfernen
+                        </button>
+
+                    </article>
+
                 </div>
+
             </section>
 
-            <aside class="warenkorb-zusammenfassung">
+            <aside class="warenkorb-zusammenfassung"
+                aria-label="Bestellübersicht">
 
                 <hr>
 
                 <div class="bestellung">
+
+                    <h2>Bestellübersicht</h2>
+
                     <p>Zwischensumme: 2.549,98 €</p>
                     <p>Lieferung: 4,99 €</p>
 
                     <h3>Gesamtpreis: 2.554,97 €</h3>
 
-                    <br>
-
-                    <p>
+                  
                         <a href="kasse.html" class="kasse-btn">
-                            <button>Zur Kasse</button>
-                        </a>
-                    </p>
-
+                            <button>Zur Kasse
+                     </button>   </a>
+                    
+<br><br>
                     <hr>
+
                 </div>
 
                 <div class="zahlung">
-                    Wir akzeptieren:
-                    <br><br>
 
-                    <img src="../../assets/img/visa.png" alt="Visa" height="35">
-                    <img src="../../assets/img/mastercard.png" alt="Mastercard" height="35">
-                    <img src="../../assets/img/paypal.png" alt="PayPal" height="35">
-                    <img src="../../assets/img/applepay.png" alt="Apple Pay" height="35">
-                    <img src="../../assets/img/klarna.png" alt="Klarna" height="35">
+                    <h3>Zahlungsmöglichkeiten</h3>
+
+                    <p>Wir akzeptieren folgende Zahlungsmethoden:</p>
+
+                    <img src="../../assets/img/visa.png"
+                        alt="Visa" height="35">
+
+                    <img src="../../assets/img/mastercard.png"
+                        alt="Mastercard" height="35">
+
+                    <img src="../../assets/img/paypal.png"
+                        alt="PayPal" height="35">
+
+                    <img src="../../assets/img/applepay.png"
+                        alt="Apple Pay" height="35">
+
+                    <img src="../../assets/img/klarna.png"
+                        alt="Klarna" height="35">
+
                 </div>
 
+            </aside>
+
         </div>
-        </aside>
 
     </main>
 
     <footer>
-        <nav aria-label="Footer">
+
+        <hr>
+
+        <nav aria-label="Footernavigation">
             <ul>
                 <li><a href="../footer/ueber.html">Über uns</a></li>
                 <li><a href="../footer/faq.html">FAQ</a></li>
                 <li><a href="../footer/impressum.html">Impressum</a></li>
                 <li><a href="../footer/datenschutz.html">Datenschutz</a></li>
-                
             </ul>
         </nav>
 
         <p>
-            <img src="../../assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten"
+            <img src="../../assets/img/studybox-logo-weiss.png"
+                alt="StudyBox – Digitale Starterpakete für Studenten"
                 width="80">
         </p>
+
     </footer>
 
 </body>
 
 </html>
+```

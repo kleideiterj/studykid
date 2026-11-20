@@ -1,54 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
+    <meta charset="UTF-8">
     <title>Anmeldung</title>
     <link rel="stylesheet" href="../../assets/css/basic.css">
     <link rel="stylesheet" href="../../assets/css/anmelden.css">
 </head>
 
 <body>
-  
-    
+
+
 
     <header>
         <p><a href="../../index.html"><img src="../../assets/img/studybox-hut-logo.png" alt="StudyBox – zur Startseite"
                     width="80"></a></p>
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="../../index.html" aria-current="page">Übersicht</a></li>
+                <li><a href="../../index.html">Übersicht</a></li>
                 <li><a href="../bundles/bundle.html">Bundles</a></li>
                 <li><a href="../warenkorb/studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="../konto/profilAnmelden.html"> <img src="../../assets/img/profil.png" alt="Mein Profil"
-                            width="50" title="Mein Profil"></a></li>
-                <li><a href="../warenkorb/warenkorb.html"><img src="../../assets/img/warenkorb.png" alt="Warenkorb"
-                            width="50" title="Warenkorb"></a></li>
+                <li><a href="../konto/profilAnmelden.html">
+                        <img src="../../assets/img/profil.png" alt="Mein Profil" width="50" title="Mein Profil">
+                    </a></li>
+                <li><a href="../warenkorb/warenkorb.html">
+                        <img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50" title="Warenkorb">
+                    </a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main id="hauptinhalt">
         <h1>Beim StudyBox Store Anmelden</h1>
         <hr>
-        <form>
-            <input type="email" placeholder="E-Mail oder Telefonnummer"><br><br>
-            <input type="password" placeholder="Passwort"><br><br>
-            <a href="Übersicht.html"> <button>Anmelden</button></a>
 
+        <form>
+            <label for="email" class="visually-hidden">E-Mail oder Telefonnummer</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail oder Telefonnummer"
+                autocomplete="username" required>
+            <br><br>
+
+            <label for="passwort" class="visually-hidden">Passwort</label>
+            <input type="password" id="passwort" name="passwort" placeholder="Passwort"
+                autocomplete="current-password" required>
+            <br><br>
+
+            <button type="submit">Anmelden</button>
         </form>
-        <p><input type="checkbox" id="account merken">
-            <label for="acount merken">
+
+        <p>
+            <input type="checkbox" id="account-merken" name="account-merken">
+            <label for="account-merken">
                 Studybox Acount merken
             </label>
         </p>
-        <p> <a href="profilErstellen.html">Passwort vergessen?</a></p>
+
+        <p><a href="profilErstellen.html">Passwort vergessen?</a></p>
+
         <p>Du hast noch kein konto bei Studybox
-            <a href="profilErstellen.html">Erstelle ein Konto für die Zukunft </a>
+            <a href="profilErstellen.html">Erstelle ein Konto für die Zukunft</a>
         </p>
+
         <br>
         <hr>
-        
-
     </main>
+
     <footer>
         <hr>
         <nav aria-label="Footer">
@@ -59,9 +75,10 @@
                 <li><a href="../footer/datenschutz.html">Datenschutz</a></li>
             </ul>
         </nav>
-        <p><img src="../../assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten"
-                width="80"></p>
+        <p><img src="../../assets/img/studybox-logo-weiss.png"
+                alt="StudyBox - Digitale Starterpakete für Studenten" width="80"></p>
     </footer>
+
 </body>
 
 </html>

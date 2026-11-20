@@ -1,47 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="de">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studentenrabatt</title>
+    <meta name="description" content="Beantrage deinen StudyBox-Erstsemester-Rabatt.">
     <link rel="stylesheet" href="../../assets/css/basic.css">
     <link rel="stylesheet" href="../../assets/css/studentenrabatt.css">
 </head>
 
 <body>
-   
+
+
 
     <header>
-        <p><a href="../../index.html"><img src="../../assets/img/studybox-hut-logo.png"
-                    alt="StudyBox – zur Startseite" width="80"></a></p>
+        <p>
+            <a href="../../index.html">
+                <img src="../../assets/img/studybox-hut-logo.png"
+                    alt="StudyBox – zur Startseite" width="80">
+            </a>
+        </p>
+
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="../../index.html" aria-current="page">Übersicht</a></li>
-                <li><a href="../bundles/bundle.html" >Bundles</a></li>
-                <li><a href="../warenkorb/studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="../konto/profilAnmelden.html"> <img src="../../assets/img/profil.png" alt="Mein Profil" width="50"
-                            title="Mein Profil"></a></li>
-                <li><a href="../warenkorb/warenkorb.html"><img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50"
-                            title="Warenkorb"></a></li>
+                <li><a href="../../index.html">Übersicht</a></li>
+                <li><a href="../bundles/bundle.html">Bundles</a></li>
+                <li><a href="../warenkorb/studentenrabatt.html" aria-current="page">Studentenrabatt</a></li>
+                <li>
+                    <a href="../konto/profilAnmelden.html">
+                        <img src="../../assets/img/Profil.png" alt="Mein Profil" width="50"
+                            title="Mein Profil">
+                    </a>
+                </li>
+                <li>
+                    <a href="../warenkorb/warenkorb.html">
+                        <img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50"
+                            title="Warenkorb">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="studentenrabatt-page">
-
+    <main id="hauptinhalt" class="studentenrabatt-page">
 
         <h1>
             Du beginnst bald dein Studium?
             Dann sichere dir jetzt deinen Erstsemester-Rabatt.
         </h1>
+
         <hr>
 
         <h2>Rabatt beantragen</h2>
 
-
-        Lade deinen Immatrikulations- oder Zulassungsbescheid hoch,
-        um deinen Rabatt zu erhalten.
-
+        <p>
+            Lade deinen Immatrikulations- oder Zulassungsbescheid hoch,
+            um deinen Rabatt zu erhalten.
+        </p>
 
         <label for="bescheid">
             Immatrikulationsbescheid:
@@ -49,11 +66,12 @@
 
         <br>
 
-        <input type="file" id="bescheid">
+        <input type="file" id="bescheid" name="bescheid"
+            aria-describedby="bescheid-hinweis">
 
         <br><br>
 
-        <input type="checkbox" id="bestaetigung">
+        <input type="checkbox" id="bestaetigung" name="bestaetigung">
 
         <label for="bestaetigung">
             Ich bestätige, dass ich mein Studium demnächst beginne.
@@ -62,7 +80,7 @@
         <br><br>
 
         <a href="rabattcode.html">
-            <button>Rabatt beantragen</button>
+            <button type="button">Rabatt beantragen</button>
         </a>
 
         <hr>
@@ -76,22 +94,27 @@
         </ul>
 
     </main>
-  <footer>
-        <nav aria-label="Footer">
+
+    <footer>
+
+        <nav aria-label="Footernavigation">
             <ul>
                 <li><a href="../footer/ueber.html">Über uns</a></li>
                 <li><a href="../footer/faq.html">FAQ</a></li>
                 <li><a href="../footer/impressum.html">Impressum</a></li>
                 <li><a href="../footer/datenschutz.html">Datenschutz</a></li>
-                
             </ul>
         </nav>
 
         <p>
-            <img src="../../assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten"
+            <img src="../../assets/img/studybox-logo-weiss.png"
+                alt="StudyBox - Digitale Starterpakete für Studenten"
                 width="80">
         </p>
+
     </footer>
+
 </body>
 
 </html>
+```

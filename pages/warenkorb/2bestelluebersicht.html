@@ -11,41 +11,45 @@
 </head>
 
 <body>
-<header>
-        <p><a href="../../index.html"><img src="../../assets/img/studybox-hut-logo.png"
-                    alt="StudyBox – zur Startseite" width="80"></a></p>
+
+    <header>
+        <p><a href="../../index.html"><img src="../../assets/img/studybox-hut-logo.png" alt="StudyBox – zur Startseite"
+                    width="80"></a></p>
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="../../index.html" aria-current="page">Übersicht</a></li>
+                <li><a href="../../index.html">Übersicht</a></li>
                 <li><a href="../bundles/bundle.html">Bundles</a></li>
                 <li><a href="../warenkorb/studentenrabatt.html">Studentenrabatt</a></li>
-                <li><a href="../konto/profilAnmelden.html"> <img src="../../assets/img/profil.png" alt="Mein Profil" width="50"
-                            title="Mein Profil"></a></li>
-                <li><a href="../warenkorb/warenkorb.html"><img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50"
-                            title="Warenkorb"></a></li>
+                <li><a href="../konto/profilAnmelden.html">
+                        <img src="../../assets/img/Profil.png" alt="Mein Profil" width="50" title="Mein Profil"></a>
+                </li>
+                <li><a href="../warenkorb/warenkorb.html">
+                        <img src="../../assets/img/warenkorb.png" alt="Warenkorb" width="50" title="Warenkorb"></a></li>
             </ul>
         </nav>
     </header>
-    <main class="bestelluebersicht-page">
-        <h1>Bestellübersicht</h1>
-        <a href="kasse.html"><button>Zur Kasse</button></a>
 
-        <h2><strong>Erwartete Zustellung</strong></h2>
-        <h3><strong>15.12. - 20.12.</strong></h3>
-        <p>Lieferung: kostenfrei</p>
-        <h2>Paket wird zugestellt von StudyBox</h2>
+    <main id="hauptinhalt" class="bestelluebersicht-page">
+
+
+        <a href="kasse.html"><button>Zur Kasse</button></a>
+        <hr>
+        <h1><strong>Bestellübersicht</strong></h1>
+        <h2><strong>Erwartete Zustellung:</strong> <small>15.12. - 20.12.</small></h2>
 
         <hr>
 
-        <h1>Bestellung</h1>
-        <h3><strong>15.12. - 20.12.</strong></h3>
+
+
+
+
 
         <!-- Zwei-Spalten-Layout: links Inhalt, rechts Zusammenfassung -->
         <div class="warenkorb-layout">
 
             <!-- Linke Seite -->
             <div>
-                <section class="warenkorb-produkte">
+                <section class="warenkorb-produkte" aria-label="Bestellte Produkte">
 
                     <!-- Wirtschaft & Digitales Bundle -->
                     <div class="warenkorb-item">
@@ -60,7 +64,8 @@
 
                                 <div class="produkt-info">
                                     <h2>Wirtschaft &amp; Digitales Bundle</h2>
-                                    <p>Das Premium-Studienpaket für digitale Studiengänge. Mit Notebook, Monitor, Tablet und
+                                    <p>Das Premium-Studienpaket für digitale Studiengänge. Mit Notebook, Monitor, Tablet
+                                        und
                                         passendem Zubehör für maximale Produktivität.</p>
                                     <p class="preis">Preis: 1.349,99 €</p>
                                 </div>
@@ -76,13 +81,13 @@
 
                                 <a href="informatik-bundle.html">
                                     <img src="../../assets/img/kit-informatik.jpg" alt="StudyBox Informatik Bundle"
-                                        loading="lazy"
-                                        style="width: 180px; height: auto; object-fit: contain;">
+                                        loading="lazy" style="width: 180px; height: auto; object-fit: contain;">
                                 </a>
 
                                 <div class="produkt-info">
                                     <h2>StudyBox Informatik Bundle</h2>
-                                    <p>Leistungsstarkes Komplettpaket mit Intel Core i7, 16 GB RAM, 512 GB SSD, Tablet und
+                                    <p>Leistungsstarkes Komplettpaket mit Intel Core i7, 16 GB RAM, 512 GB SSD, Tablet
+                                        und
                                         24"-Monitor für Coding, Cloud-Computing und Datenbanken</p>
                                     <p class="preis">Preis: 1.199,99 €</p>
                                 </div>
@@ -111,8 +116,8 @@
 
                 <div>
                     <h3>Gutscheine &amp; Rabatte</h3>
-                    <label>Code eingeben:</label><br>
-                    <input type="text" required>
+                    <label for="rabattcode">Code eingeben:</label><br>
+                    <input type="text" id="rabattcode" name="rabattcode" required>
                     <a href="2bestelluebersicht.html"><button>Rabatt anwenden</button></a>
                 </div>
             </div>
@@ -121,13 +126,13 @@
             <div>
 
                 <hr>
-
+                <h3>Paket wird zugestellt von StudyBox</h3>
                 <p>Zwischensumme: 2.549,98 €</p>
                 <p>-10 % Studentenrabatt: - 255,00 €</p>
                 <p>Lieferung: kostenfrei</p>
                 <p><strong>Gesamtpreis: 2.294,98 €</strong></p>
 
-                    <a href="bestellt.html"><button> Zur Bestätigung</button></a>
+                <a href="bestellt.html"><button> Zur Bestätigung</button></a>
 
                 <hr>
 
@@ -163,7 +168,8 @@
                 <li><a href="../footer/datenschutz.html">Datenschutz</a></li>
             </ul>
         </nav>
-        <p><img src="../../assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten" width="80"></p>
+        <p><img src="../../assets/img/studybox-logo-weiss.png" alt="StudyBox - Digitale Starterpakete für Studenten"
+                width="80"></p>
     </footer>
 
 </body>
