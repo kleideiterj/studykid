@@ -203,7 +203,7 @@ button:focus {
 .product-description > .component:first-child {
     margin: -25px;
     padding: 55px 25px 30px;
-    background: #fff2cc;
+    background: var(--color-background);
     border-radius: 20px;
 }
 /*
