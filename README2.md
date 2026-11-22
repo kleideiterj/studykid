@@ -20,8 +20,7 @@ Die Webseite besteht aus HTML- und CSS-Dateien. Eine Installation ist nicht erfo
 
 ## Aufbau des Projekts
 
-```text
-.
+studybox
 ├── .vscode/
 │   └── launch.json
 ├── assets/
@@ -34,7 +33,6 @@ Die Webseite besteht aus HTML- und CSS-Dateien. Eine Installation ist nicht erfo
 │   └── warenkorb/      # Warenkorb, Kasse, Bestellung, Studentenrabatt
 ├── index.html          # Startseite
 └── README2.md
-```
 
 Das Aussehen der Seiten wird über die CSS-Dateien in `assets/css/` festgelegt. Bilder und Logos liegen in `assets/img/`.
 
