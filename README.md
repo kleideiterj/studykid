@@ -1,6 +1,6 @@
 # StudyBox
 
-StudyBox ist ein deutschsprachiger Website-Prototyp für digitale Starterpakete für Studierende. Die Seiten informieren über passende Technik für verschiedene Studienbereiche und zeigen beispielhaft einen Online-Shop mit Bundles, Warenkorb und Bestellablauf.
+StudyBox ist ein deutschsprachiger Webseite-Prototyp für digitale Starterpakete für Studierende. Die Seiten informieren über passende Technik für verschiedene Studienbereiche und zeigen beispielhaft einen Online-Shop mit Bundles, Warenkorb und Bestellablauf.
 
 ## Website lokal starten
 
