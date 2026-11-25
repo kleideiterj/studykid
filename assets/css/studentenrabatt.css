@@ -50,7 +50,7 @@
 .studentenrabatt-page > h1 + hr {
     margin-top: 0;
 }
-
+.kasse-page > label,
 .studentenrabatt-page > label[for="bescheid"] {
     display: block;
     margin: 24px 0 8px;
