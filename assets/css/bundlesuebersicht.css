@@ -24,6 +24,7 @@
 /*Einzelne Produktkarte*/
 
 .produkt {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -47,11 +48,32 @@
     justify-content: center;
 }
 
-.produkt > a {
-    display: block;
+.produkt-link {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
 }
 
-.produkt > p:not(.preis) {
+.produkt-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+}
+
+.produkt-link:focus-visible::after {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 3px;
+}
+
+.produkt button {
+    position: relative;
+    z-index: 2;
+}
+
+.produkt-link > p:not(.preis) {
     flex-grow: 1;
 }
 
