@@ -182,8 +182,8 @@ button:focus {
 }
 
 .bundle-info-table thead {
-    background: var(--color-primary);
-    color: var(--color-white);
+    background: var(--color-white);
+    color: var(--color-primary);
 }
 
 .bundle-info-table th,
